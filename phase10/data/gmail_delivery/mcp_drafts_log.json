@@ -181,6 +181,34 @@
       "subject": "Test Weekly Report",
       "body_snippet": "Hello Support Team",
       "timestamp": "2026-09-17T00:37:29.505895"
+    },
+    {
+      "draft_id": "draft-94845a1c5354",
+      "recipient": "prathamd3001@gmail.com",
+      "subject": "Weekly App Review Pulse - 2026-09-17",
+      "body_snippet": "Hello,\n\nHere is the weekly app review pulse summary:\n\n==================================================\n\nHEADLINE\n\nWeekly review analysis highlights key user concerns and improvement opportunities\n\n=",
+      "timestamp": "2026-09-17T01:08:45.096590"
+    },
+    {
+      "draft_id": "draft-00ceecf85ed4",
+      "recipient": "test@example.com",
+      "subject": "Weekly Pulse Subject",
+      "body_snippet": "Weekly Pulse Body",
+      "timestamp": "2026-09-17T01:10:06.665434"
+    },
+    {
+      "draft_id": "draft-e07e593d68ea",
+      "recipient": "prathamd3001@gmail.com",
+      "subject": "Weekly App Review Pulse - 2026-09-17",
+      "body_snippet": "Hello,\n\nHere is the weekly app review pulse summary:\n\n==================================================\n\nHEADLINE\n\nWeekly review analysis highlights key user concerns and improvement opportunities\n\n=",
+      "timestamp": "2026-09-17T01:10:06.816003"
+    },
+    {
+      "draft_id": "draft-bc3b7d010dbe",
+      "recipient": "test@example.com",
+      "subject": "Test Weekly Report",
+      "body_snippet": "Hello Support Team",
+      "timestamp": "2026-09-17T01:10:06.895700"
     }
   ]
 }

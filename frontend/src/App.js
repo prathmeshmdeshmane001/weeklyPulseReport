@@ -117,7 +117,8 @@ function App() {
       const freshReviews = await fetchJsonWithFallback([
         '/data/privacy_safe_reviews.json',
         `${apiUrl}/api/reviews`,
-        'https://raw.githubusercontent.com/pbehuray/m3-weeklyPulseReport/master/phase4/data/privacy_safe/privacy_safe_reviews.json'
+        'https://raw.githubusercontent.com/prathmeshmdeshmane001/weeklyPulseReport/main/frontend/public/data/privacy_safe_reviews.json',
+        'https://raw.githubusercontent.com/prathmeshmdeshmane001/weeklyPulseReport/main/phase4/data/privacy_safe/privacy_safe_reviews.json'
       ]) || [];
 
       if (freshReviews.length > 0) {
@@ -133,21 +134,24 @@ function App() {
       const pulseData = await fetchJsonWithFallback([
         '/data/weekly_pulse.json',
         `${apiUrl}/api/pulse`,
-        'https://raw.githubusercontent.com/pbehuray/m3-weeklyPulseReport/master/phase8/data/weekly_pulse/weekly_pulse.json'
+        'https://raw.githubusercontent.com/prathmeshmdeshmane001/weeklyPulseReport/main/frontend/public/data/weekly_pulse.json',
+        'https://raw.githubusercontent.com/prathmeshmdeshmane001/weeklyPulseReport/main/phase8/data/weekly_pulse/weekly_pulse.json'
       ]) || {};
 
       // Load docs delivery status
       const docsData = await fetchJsonWithFallback([
         '/data/phase9_delivery_status.json',
         `${apiUrl}/api/docs-status`,
-        'https://raw.githubusercontent.com/pbehuray/m3-weeklyPulseReport/master/phase9/data/docs_delivery/phase9_delivery_status.json'
+        'https://raw.githubusercontent.com/prathmeshmdeshmane001/weeklyPulseReport/main/frontend/public/data/phase9_delivery_status.json',
+        'https://raw.githubusercontent.com/prathmeshmdeshmane001/weeklyPulseReport/main/phase9/data/docs_delivery/phase9_delivery_status.json'
       ]) || {};
 
       // Load gmail delivery status
       const gmailData = await fetchJsonWithFallback([
         '/data/phase10_gmail_status.json',
         `${apiUrl}/api/gmail-status`,
-        'https://raw.githubusercontent.com/pbehuray/m3-weeklyPulseReport/master/phase10/data/gmail_delivery/phase10_gmail_status.json'
+        'https://raw.githubusercontent.com/prathmeshmdeshmane001/weeklyPulseReport/main/frontend/public/data/phase10_gmail_status.json',
+        'https://raw.githubusercontent.com/prathmeshmdeshmane001/weeklyPulseReport/main/phase10/data/gmail_delivery/phase10_gmail_status.json'
       ]) || {};
 
       const now = new Date();
@@ -245,8 +249,8 @@ function App() {
           "Review the most common feedback examples and convert recurring friction into a product improvement backlog item.",
           "Prioritize crash and latency diagnostics for the most recent app versions mentioned in reviews."
         ],
-        docsUrl: docsData.document_url || 'https://docs.google.com/document/d/1IsqpOHq53G51Shg5R271iq7P57k6wUqqQKVNzJVA6dw/edit',
-        recipient: gmailData.recipient || 'support-team@groww.in',
+        docsUrl: docsData.document_url || 'https://docs.google.com/document/d/1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s/edit',
+        recipient: gmailData.recipient || 'prathamd3001@gmail.com',
       };
       
       setData(transformedData);
@@ -1741,8 +1745,8 @@ function App() {
               const topThemes = (data.themes || []).slice(0, 3);
               const quotesList = data.quotes || [];
               const actionsList = data.actions || [];
-              const docTargetUrl = data.docsUrl || 'https://docs.google.com/document/d/1IsqpOHq53G51Shg5R271iq7P57k6wUqqQKVNzJVA6dw/edit';
-              const recipient = data.recipient || 'support-team@groww.in';
+              const docTargetUrl = data.docsUrl || 'https://docs.google.com/document/d/1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s/edit';
+              const recipient = data.recipient || 'prathamd3001@gmail.com';
               const todayStr = new Date().toISOString().split('T')[0];
 
               const pulseMarkdown = [
