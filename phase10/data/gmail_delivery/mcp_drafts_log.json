@@ -230,6 +230,48 @@
       "subject": "Test Weekly Report",
       "body_snippet": "Hello Support Team",
       "timestamp": "2026-09-17T01:32:15.230699"
+    },
+    {
+      "draft_id": "draft-296935d31414",
+      "recipient": "prathamd3001@gmail.com",
+      "subject": "Weekly App Review Pulse - 2026-09-17",
+      "body_snippet": "Hello,\n\nHere is the weekly app review pulse summary:\n\n==================================================\n\nHEADLINE\n\nWeekly review analysis highlights key user concerns and improvement opportunities\n\n=",
+      "timestamp": "2026-09-17T01:46:32.694313"
+    },
+    {
+      "draft_id": "draft-7156bcb56187",
+      "recipient": "prathamd3001@gmail.com",
+      "subject": "Weekly App Review Pulse - 2026-09-17",
+      "body_snippet": "Hello,\n\nHere is the weekly app review pulse summary:\n\n==================================================\n\nHEADLINE\n\nWeekly review analysis highlights key user concerns and improvement opportunities\n\n=",
+      "timestamp": "2026-09-17T01:52:00.323160"
+    },
+    {
+      "draft_id": "draft-b6099cdfa2cd",
+      "recipient": "prathamd3001@gmail.com",
+      "subject": "Weekly App Review Pulse - 2026-09-17",
+      "body_snippet": "Hello,\n\nHere is the weekly app review pulse summary:\n\n==================================================\n\nHEADLINE\n\nWeekly review analysis highlights key user concerns and improvement opportunities\n\n=",
+      "timestamp": "2026-09-17T01:53:05.584576"
+    },
+    {
+      "draft_id": "draft-60ee23916966",
+      "recipient": "test@example.com",
+      "subject": "Weekly Pulse Subject",
+      "body_snippet": "Weekly Pulse Body",
+      "timestamp": "2026-09-17T01:53:31.342778"
+    },
+    {
+      "draft_id": "draft-54ef16ec252d",
+      "recipient": "prathamd3001@gmail.com",
+      "subject": "Weekly App Review Pulse - 2026-09-17",
+      "body_snippet": "Hello,\n\nHere is the weekly app review pulse summary:\n\n==================================================\n\nHEADLINE\n\nWeekly review analysis highlights key user concerns and improvement opportunities\n\n=",
+      "timestamp": "2026-09-17T01:53:31.564315"
+    },
+    {
+      "draft_id": "draft-2594b7f26a01",
+      "recipient": "test@example.com",
+      "subject": "Test Weekly Report",
+      "body_snippet": "Hello Support Team",
+      "timestamp": "2026-09-17T01:53:31.642777"
     }
   ]
 }

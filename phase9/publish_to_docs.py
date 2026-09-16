@@ -247,9 +247,20 @@ def main():
             sys.path.insert(0, str(project_root / "phase9"))
         from google_docs_writer import append_to_live_google_doc, find_service_account_path
         
+        webhook_url = os.environ.get("GDOCS_WEBHOOK_URL", "").strip()
         service_cred = find_service_account_path(project_root)
-        if service_cred:
-            print(f"\n🔑 Found Google service account: {service_cred.name}")
+        
+        if webhook_url:
+            print("\n🚀 Appending directly to live Google Doc via Apps Script Webhook...")
+            live_res = append_to_live_google_doc(doc_id, formatted_content, project_root)
+            if live_res.get("success"):
+                print(f"✅ LIVE GOOGLE DOCS API: Successfully appended {live_res.get('characters_appended')} characters directly to your Google Doc!")
+                status["live_google_api_success"] = True
+            else:
+                print(f"⚠ Live Google Docs Webhook returned: {live_res.get('message')}")
+                status["live_google_api_error"] = live_res.get("message")
+        elif service_cred:
+            print(f"\n🔑 Found Google credentials: {service_cred.name}")
             print("🚀 Appending directly to live Google Doc via Google Docs API v1...")
             live_res = append_to_live_google_doc(doc_id, formatted_content, project_root)
             if live_res.get("success"):
@@ -261,9 +272,9 @@ def main():
                 status["live_google_api_error"] = live_res.get("message")
         else:
             print("\nℹ Live Google Docs Direct Writing:")
-            print("  To have Python directly insert text into your live Google Doc without copy-pasting:")
-            print("  1. Save your Google Cloud Service Account JSON as 'service_account.json' in this project root.")
-            print(f"  2. Share your Google Doc (ID: {doc_id}) with the service account email as Editor.")
+            print("  To have Python directly insert text into your live Google Doc:")
+            print("  Option A: Set GDOCS_WEBHOOK_URL in .env (Google Apps Script Webhook).")
+            print("  Option B: Save Google Service Account JSON as 'service_account.json' in this project root.")
     except Exception as e:
         print(f"Notice: Direct Google Docs writer check: {e}")
     

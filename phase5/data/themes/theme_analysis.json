@@ -443,5 +443,5 @@
       "source": "local_deterministic_fallback"
     }
   ],
-  "groq_error": "HTTP 403: Request to POST /openai/v1/chat/completions on api.groq.com not allowed by policy\n"
+  "groq_error": "HTTP 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n"
 }

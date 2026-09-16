@@ -271,6 +271,70 @@
       "doc_url": "https://docs.google.com/document/d/test_doc_id/edit",
       "content_length": 27,
       "timestamp": "2026-09-17T01:32:15.230139"
+    },
+    {
+      "id": "doc-entry-d20d712e",
+      "tool": "append_to_doc",
+      "doc_id": "1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s",
+      "doc_url": "https://docs.google.com/document/d/1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s/edit",
+      "content_length": 1798,
+      "timestamp": "2026-09-17T01:46:32.587198"
+    },
+    {
+      "id": "doc-entry-fad2a64b",
+      "tool": "append_to_doc",
+      "doc_id": "1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s",
+      "doc_url": "https://docs.google.com/document/d/1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s/edit",
+      "content_length": 1798,
+      "timestamp": "2026-09-17T01:47:02.749440"
+    },
+    {
+      "id": "doc-entry-80442df3",
+      "tool": "append_to_doc",
+      "doc_id": "1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s",
+      "doc_url": "https://docs.google.com/document/d/1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s/edit",
+      "content_length": 1798,
+      "timestamp": "2026-09-17T01:51:40.461955"
+    },
+    {
+      "id": "doc-entry-c70ef39a",
+      "tool": "append_to_doc",
+      "doc_id": "1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s",
+      "doc_url": "https://docs.google.com/document/d/1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s/edit",
+      "content_length": 1798,
+      "timestamp": "2026-09-17T01:52:47.152732"
+    },
+    {
+      "id": "doc-entry-56b0b764",
+      "tool": "append_to_doc",
+      "doc_id": "1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s",
+      "doc_url": "https://docs.google.com/document/d/1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s/edit",
+      "content_length": 1798,
+      "timestamp": "2026-09-17T01:53:03.738202"
+    },
+    {
+      "id": "doc-entry-0eb85067",
+      "tool": "append_to_doc",
+      "doc_id": "test-doc-123",
+      "doc_url": "https://docs.google.com/document/d/test-doc-123/edit",
+      "content_length": 25,
+      "timestamp": "2026-09-17T01:53:31.337714"
+    },
+    {
+      "id": "doc-entry-52589c39",
+      "tool": "append_to_doc",
+      "doc_id": "1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s",
+      "doc_url": "https://docs.google.com/document/d/1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s/edit",
+      "content_length": 1798,
+      "timestamp": "2026-09-17T01:53:31.431441"
+    },
+    {
+      "id": "doc-entry-70cd304d",
+      "tool": "append_to_doc",
+      "doc_id": "test_doc_id",
+      "doc_url": "https://docs.google.com/document/d/test_doc_id/edit",
+      "content_length": 27,
+      "timestamp": "2026-09-17T01:53:31.642149"
     }
   ]
 }

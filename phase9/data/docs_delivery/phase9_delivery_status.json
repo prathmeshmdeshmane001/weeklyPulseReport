@@ -4,5 +4,6 @@
   "document_id": "1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s",
   "document_url": "https://docs.google.com/document/d/1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s/edit",
   "pulse_date": "2026-09-17",
-  "timestamp": "2026-09-17T01:32:15.095298"
+  "timestamp": "2026-09-17T01:53:31.432088",
+  "live_google_api_error": "Apps Script returned status 403: Request to POST /macros/s/AKfycbw9Jkx2TCEZtXqsfYa9tbqZdt_S61SDirB79UnmdqLGGtuR0Gvnl5N0LBFhjzaETa59/exec on script.google.com not allowed by policy\n"
 }
