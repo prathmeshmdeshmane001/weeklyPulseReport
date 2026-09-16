@@ -1,0 +1,567 @@
+{
+  "model": "llama-3.3-70b-versatile",
+  "purpose": "Phase 5 theme refinement",
+  "constraints": {
+    "max_themes": 5,
+    "use_real_quotes_only": true,
+    "do_not_invent_evidence": true,
+    "return_compact_json": true
+  },
+  "input": {
+    "source_review_count": 2390,
+    "working_set_review_count": 500,
+    "candidate_themes": [
+      {
+        "theme": "Product Experience and Features",
+        "review_count": 145,
+        "rating_breakdown": {
+          "positive": 69,
+          "negative": 42,
+          "neutral": 34
+        },
+        "sample_quotes": [
+          {
+            "review_id": "play_store-2026-05-14-00017",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "easy interface app and good and easy to use. nice service help too"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00154",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "this is not good features only buy and sells charge extra"
+          },
+          {
+            "review_id": "play_store-2026-05-11-00440",
+            "rating": 4,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "App good simple and essy but costomer care very slow and poor . Proper guidence and solution bhi nahi milta hai . groww excutive khud hi confuse rahty hai . Costomer care ( chat & call ) poor responce . And baat nahi kerty call cut kerty hai hai Please provide better costomer sup"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00130",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "Its streamlined onboarding process, advanced portfolio analytics, and real-time market insights significantly enhance the overall [ACCOUNT_ID] for both novice and seasoned investors. Furthermore, the platform’s robust security architecture and transparent fee structure contribute"
+          },
+          {
+            "review_id": "play_store-2026-05-09-00545",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "Interface is good, Speed of placing order is good. But CHARGES are worst part , it charges the most in industry."
+          },
+          {
+            "review_id": "play_store-2026-05-08-00628",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "please improve their features of marking the support and resistance level of big time frame but I come in small time frame what earlier 9 marked it is show very far in shorter time frame . my one suggestion is add a feature in scalping mode I can see the chart in different time f"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00193",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "very [ACCOUNT_ID]. Can rely on the data during the market hours for entry and exit. App is very convenient to do the research. All the required info in one place."
+          },
+          {
+            "review_id": "play_store-2026-05-10-00453",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "groww doesn't have mutual fund opt out for demat mode settings available for users directly. They made demat default and hid the opt out option deep in the help center rather as a straight forward option where users can make decisions. These kinda shady practice questions their c"
+          }
+        ]
+      },
+      {
+        "theme": "Customer Support",
+        "review_count": 105,
+        "rating_breakdown": {
+          "negative": 58,
+          "positive": 33,
+          "neutral": 14
+        },
+        "sample_quotes": [
+          {
+            "review_id": "play_store-2026-05-14-00099",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "Very bad experience with Groww. The [ACCOUNT_ID] is extremely poor and issues take too long to resolve. I have been waiting for a solution but keep getting delayed responses without proper updates. Very disappointing support experience."
+          },
+          {
+            "review_id": "play_store-2026-05-11-00440",
+            "rating": 4,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "App good simple and essy but costomer care very slow and poor . Proper guidence and solution bhi nahi milta hai . groww excutive khud hi confuse rahty hai . Costomer care ( chat & call ) poor responce . And baat nahi kerty call cut kerty hai hai Please provide better costomer sup"
+          },
+          {
+            "review_id": "play_store-2026-05-12-00246",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "WORST EXPERIENCE EVER. 6 days and my KYC is still pending. Your support team LIED to me on email - promised activation by 9 PM on 8th Oct 2026. It's 9:50 PM now, still blocked. I am losing money every day because I cannot start my SIP due to YOUR incompetence. This is financial h"
+          },
+          {
+            "review_id": "play_store-2026-05-12-00318",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "Easy to understand and fast response to request"
+          },
+          {
+            "review_id": "play_store-2026-05-08-00628",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "please improve their features of marking the support and resistance level of big time frame but I come in small time frame what earlier 9 marked it is show very far in shorter time frame . my one suggestion is add a feature in scalping mode I can see the chart in different time f"
+          },
+          {
+            "review_id": "play_store-2026-05-14-00020",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "don't take any from them .if you take you will die.mental harrasment from agent"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00191",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "One of the best apps to Support the budding or new investor who enters into the market for the first time. They have all the fundamentals you should know for investing at a very convenient place. Their charts show exactly what you want to see and provide you a crisp outline of da"
+          },
+          {
+            "review_id": "play_store-2026-05-09-00528",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "Worst [ACCOUNT_ID]. My groww app logged out automatically. Most vulnerable app. Groww must add either 2 factor authentication or sim verification like bank apps for login.I contacted the [ACCOUNT_ID] but no reply. Useless app. I think I have to shift from groww to other app."
+          }
+        ]
+      },
+      {
+        "theme": "Withdrawals",
+        "review_count": 95,
+        "rating_breakdown": {
+          "negative": 43,
+          "positive": 40,
+          "neutral": 12
+        },
+        "sample_quotes": [
+          {
+            "review_id": "play_store-2026-05-14-00075",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "Limit [REFERENCE_ID] is not proper. Not able to sell all quantity at a time at a predefined price, it sells quantity partially & brokerage charges exceed more than profit. This is the worst experience."
+          },
+          {
+            "review_id": "play_store-2026-05-13-00160",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "I chose Groww expecting transparent pricing, but my experience was the opposite. The final charges were much higher than anticipated, and I did not clearly understand the full cost before executing the trade. Platforms handling financial transactions should make all fees prominen"
+          },
+          {
+            "review_id": "play_store-2026-05-14-00088",
+            "rating": 4,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "all ok but, withdrawal was not coming in time"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00130",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "Its streamlined onboarding process, advanced portfolio analytics, and real-time market insights significantly enhance the overall [ACCOUNT_ID] for both novice and seasoned investors. Furthermore, the platform’s robust security architecture and transparent fee structure contribute"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00132",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "Request Groww Team to add Trigger price in buying... Limit, Market is there.... please add trigger option in buying...."
+          },
+          {
+            "review_id": "play_store-2026-05-14-00029",
+            "rating": 2,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "too much takes fees for buys stocks"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00187",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "worst trading app while selling the stocks no charges have been seen 1st I try to verify for charges I was not able to see or purposely it not have been showed while 2nd time I click on sell the stock has been sell out I got the loss this unethical and the sell [REFERENCE_ID] see"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00133",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "Kindly add manage beneficiary option in UPI Bank transfer module. I'm unable to delete the beneficiary. this would be very helpful to manage beneficiaries."
+          }
+        ]
+      },
+      {
+        "theme": "Other",
+        "review_count": 88,
+        "rating_breakdown": {
+          "positive": 30,
+          "negative": 29,
+          "neutral": 29
+        },
+        "sample_quotes": [
+          {
+            "review_id": "play_store-2026-05-14-00073",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "Trading keliye best platform hai but brokareg jayada jata hai vo ak nagetive point hai"
+          },
+          {
+            "review_id": "play_store-2026-05-14-00062",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "Don't Install this app this big frod । I'm staying with my Comments this app is always Chit with Consumers like me i add my comments. to Care"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00214",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "Kindly add Peg ratio in fundamental section"
+          },
+          {
+            "review_id": "play_store-2026-05-14-00065",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "this app is best for treding I am use this app"
+          },
+          {
+            "review_id": "play_store-2026-05-14-00056",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "Different data is showing on the MF website, and incorrect data is showing in the Groww application. Kindly sync your data with the MF website."
+          },
+          {
+            "review_id": "play_store-2026-05-13-00194",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "some time this app network issue"
+          },
+          {
+            "review_id": "play_store-2026-05-14-00001",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "bast realest hai application for my bast app really like"
+          },
+          {
+            "review_id": "play_store-2026-05-14-00043",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "thier brokrage is more than your profit please don't use it go for others"
+          }
+        ]
+      },
+      {
+        "theme": "Payments and Transfers",
+        "review_count": 82,
+        "rating_breakdown": {
+          "negative": 32,
+          "positive": 31,
+          "neutral": 19
+        },
+        "sample_quotes": [
+          {
+            "review_id": "play_store-2026-05-13-00160",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "I chose Groww expecting transparent pricing, but my experience was the opposite. The final charges were much higher than anticipated, and I did not clearly understand the full cost before executing the trade. Platforms handling financial transactions should make all fees prominen"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00181",
+            "rating": 4,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "Today I faced very bad experience, i suppose to sell my stock but grow was down for 6hours.... Really very bad experience....Today I will exit from Groww....Will go with Paytm."
+          },
+          {
+            "review_id": "play_store-2026-05-14-00052",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "Hi UPI TAB has disappeared from the last 2 days. is this the impact of app version update?"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00187",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "worst trading app while selling the stocks no charges have been seen 1st I try to verify for charges I was not able to see or purposely it not have been showed while 2nd time I click on sell the stock has been sell out I got the loss this unethical and the sell [REFERENCE_ID] see"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00133",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "Kindly add manage beneficiary option in UPI Bank transfer module. I'm unable to delete the beneficiary. this would be very helpful to manage beneficiaries."
+          },
+          {
+            "review_id": "play_store-2026-05-13-00178",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "Thanks for the services....I want to add some suggestions which will made this app more reliable and easy for trading 1.Please add the trailing SL feature. 2.If possible , add both Index and CE/PE chart simultaneously on same screen in 1 tap trading. Hope these features will be a"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00200",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "is the most horrible horrible company and mobile app. groww is deducted delay payment charges if you are not maintain the minimum balance in groww account this is the first brokerage house where minimum balance is mandatory to maintain every [ACCOUNT_ID] the penalty delay charges"
+          },
+          {
+            "review_id": "play_store-2026-05-12-00259",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "Please add Tagging feature in the MF section. This would ease one to tag the MFs on its purpose. Example: Studies, Retirement, Education etc"
+          }
+        ]
+      },
+      {
+        "theme": "App Stability and Crashes",
+        "review_count": 74,
+        "rating_breakdown": {
+          "negative": 29,
+          "positive": 29,
+          "neutral": 16
+        },
+        "sample_quotes": [
+          {
+            "review_id": "play_store-2026-05-14-00011",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "abe kitna charge lete ho. maine vedanta k only two quantity li intraday me ...just kitne charge lagte to... inhone 19 rp liya ..aise h kuch trade liy... second day check kiya to 150 rp.. charge jabke zerodha pe check kiya vo h charge utne quantity k liye pure trade k liye only 25"
+          },
+          {
+            "review_id": "play_store-2026-05-11-00440",
+            "rating": 4,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "App good simple and essy but costomer care very slow and poor . Proper guidence and solution bhi nahi milta hai . groww excutive khud hi confuse rahty hai . Costomer care ( chat & call ) poor responce . And baat nahi kerty call cut kerty hai hai Please provide better costomer sup"
+          },
+          {
+            "review_id": "play_store-2026-05-07-00688",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "Requesting [ACCOUNT_ID] to please reach out to change my number. Thanks in advance."
+          },
+          {
+            "review_id": "play_store-2026-05-14-00069",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "it's been more than a year raised multiple complaints about slow app loading in the morning and evening session but their development team unableto fix this bug"
+          },
+          {
+            "review_id": "play_store-2026-05-10-00445",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "Thanks groww you are my life change."
+          },
+          {
+            "review_id": "play_store-2026-05-07-00698",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "groww app broker charge kucha jyada hone laga"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00185",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "don't use it if you want your money to be safe..this app lags too much ,they charge High but app and it's [ACCOUNT_ID] is pathetic..this app is not for traders you will lose your money if right time entry and exit will not work with app function"
+          },
+          {
+            "review_id": "play_store-2026-05-07-00694",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "nice application one thing need to update,open interest and change of open interest all broker give this . Grow application clear and fast no doubt."
+          }
+        ]
+      },
+      {
+        "theme": "KYC and Onboarding",
+        "review_count": 65,
+        "rating_breakdown": {
+          "negative": 34,
+          "positive": 24,
+          "neutral": 7
+        },
+        "sample_quotes": [
+          {
+            "review_id": "play_store-2026-05-12-00246",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "WORST EXPERIENCE EVER. 6 days and my KYC is still pending. Your support team LIED to me on email - promised activation by 9 PM on 8th Oct 2026. It's 9:50 PM now, still blocked. I am losing money every day because I cannot start my SIP due to YOUR incompetence. This is financial h"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00130",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "Its streamlined onboarding process, advanced portfolio analytics, and real-time market insights significantly enhance the overall [ACCOUNT_ID] for both novice and seasoned investors. Furthermore, the platform’s robust security architecture and transparent fee structure contribute"
+          },
+          {
+            "review_id": "play_store-2026-05-08-00608",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "I'm unable to login with otp or mail"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00187",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "worst trading app while selling the stocks no charges have been seen 1st I try to verify for charges I was not able to see or purposely it not have been showed while 2nd time I click on sell the stock has been sell out I got the loss this unethical and the sell [REFERENCE_ID] see"
+          },
+          {
+            "review_id": "play_store-2026-05-09-00528",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "Worst [ACCOUNT_ID]. My groww app logged out automatically. Most vulnerable app. Groww must add either 2 factor authentication or sim verification like bank apps for login.I contacted the [ACCOUNT_ID] but no reply. Useless app. I think I have to shift from groww to other app."
+          },
+          {
+            "review_id": "play_store-2026-05-08-00605",
+            "rating": 4,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "but I want something that make all analysis on investing companies without using screener.in and other"
+          },
+          {
+            "review_id": "play_store-2026-04-25-01234",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "I cannot see the holdings tab values for the last couple of days and the issue is still not resolved yet . Am I the one facing this issue or everyone ? UI wise app looks good and easy to track. kindly address the above issue"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00200",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "is the most horrible horrible company and mobile app. groww is deducted delay payment charges if you are not maintain the minimum balance in groww account this is the first brokerage house where minimum balance is mandatory to maintain every [ACCOUNT_ID] the penalty delay charges"
+          }
+        ]
+      }
+    ],
+    "top_keywords": [
+      [
+        "groww",
+        120
+      ],
+      [
+        "you",
+        108
+      ],
+      [
+        "account",
+        100
+      ],
+      [
+        "good",
+        95
+      ],
+      [
+        "will",
+        64
+      ],
+      [
+        "please",
+        64
+      ],
+      [
+        "charges",
+        61
+      ],
+      [
+        "money",
+        61
+      ],
+      [
+        "one",
+        61
+      ],
+      [
+        "trading",
+        58
+      ],
+      [
+        "they",
+        57
+      ],
+      [
+        "like",
+        56
+      ],
+      [
+        "your",
+        56
+      ],
+      [
+        "option",
+        52
+      ],
+      [
+        "hai",
+        51
+      ],
+      [
+        "easy",
+        51
+      ],
+      [
+        "grow",
+        43
+      ],
+      [
+        "market",
+        43
+      ],
+      [
+        "add",
+        42
+      ],
+      [
+        "mutual",
+        42
+      ]
+    ]
+  }
+}

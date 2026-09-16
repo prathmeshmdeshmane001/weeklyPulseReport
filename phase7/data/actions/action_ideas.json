@@ -1,0 +1,22 @@
+{
+  "source": "local_deterministic_fallback_after_groq_error",
+  "external_api_calls": 0,
+  "actions": [
+    {
+      "theme_name": "Customer Support",
+      "action": "Audit unresolved support journeys and create a weekly queue for high-frequency review complaints.",
+      "rationale": "This action is grounded in a mostly_negative theme supported by 57 reviews."
+    },
+    {
+      "theme_name": "Product Experience and Features",
+      "action": "Review the most common feedback examples and convert recurring friction into a product improvement backlog item.",
+      "rationale": "This action is grounded in a mostly_positive theme supported by 80 reviews."
+    },
+    {
+      "theme_name": "App Stability and Crashes",
+      "action": "Prioritize crash and latency diagnostics for the most recent app versions mentioned in reviews.",
+      "rationale": "This action is grounded in a mostly_negative theme supported by 39 reviews."
+    }
+  ],
+  "groq_error": "HTTP 403: Request to POST /openai/v1/chat/completions on api.groq.com not allowed by policy\n"
+}

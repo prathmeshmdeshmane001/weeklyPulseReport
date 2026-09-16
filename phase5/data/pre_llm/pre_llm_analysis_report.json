@@ -1,0 +1,612 @@
+{
+  "source_review_count": 503,
+  "working_set_limit": 500,
+  "review_count": 500,
+  "rating_label_counts": {
+    "positive": 276,
+    "negative": 186,
+    "neutral": 38
+  },
+  "platform_counts": {
+    "play_store": 500
+  },
+  "candidate_themes": [
+    {
+      "theme": "Other",
+      "review_count": 319,
+      "rating_breakdown": {
+        "positive": 198,
+        "negative": 100,
+        "neutral": 21
+      },
+      "sample_quotes": [
+        {
+          "review_id": "play_store-2026-09-12-00022",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "The letters in the app should be a bit larger; they are very small."
+        },
+        {
+          "review_id": "play_store-2026-09-12-00026",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "useless app. it refuses to accept my non google mail account."
+        },
+        {
+          "review_id": "play_store-2026-09-11-00121",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "App is perfectly running before groww update on sep 8. after it bugs like stock price suddenly stop I'm [REFERENCE_ID] running and again stopped it repeatedly. check above issue"
+        },
+        {
+          "review_id": "play_store-2026-09-12-00014",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "jabse ye aap mobile me aai hai me road pr aa gya"
+        },
+        {
+          "review_id": "play_store-2026-09-11-00129",
+          "rating": 2,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "c btaya lo eth Bathhhah h, adda ub laa kn a hy Thah gy tb lonzhU in thnyhll z on uk. kAiaaAbkjhl hy vh lhbbnn8J huh AA a h naah KnkiHb bhai yY ag Ok a a mn nhi iuhhA ahMP UN. O"
+        },
+        {
+          "review_id": "play_store-2026-09-11-00158",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "[ACCOUNT_ID].. But Brokerage charges are too high. If monthly package means could be better for F&O"
+        },
+        {
+          "review_id": "play_store-2026-09-12-00044",
+          "rating": 4,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "Good app . but some time app was freezing."
+        },
+        {
+          "review_id": "play_store-2026-09-11-00115",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "very buggy app every time it gets stuck when I go to the ipo option please fix it asap or else your groww share price will be more down"
+        }
+      ]
+    },
+    {
+      "theme": "Product Experience and Features",
+      "review_count": 80,
+      "rating_breakdown": {
+        "positive": 47,
+        "negative": 26,
+        "neutral": 7
+      },
+      "sample_quotes": [
+        {
+          "review_id": "play_store-2026-09-11-00080",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "I have been utilizing Groww as my primary investment platform. I particularly appreciate its intuitive interface and [ACCOUNT_ID] design. The recently launched GR-1 AI assistant has proven to be an invaluable tool. It efficiently provides comprehensive information, eliminating th"
+        },
+        {
+          "review_id": "play_store-2026-09-07-00530",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "All profile enjoying GROWW it self, Dot use this app as never suggested. We investing to earn but they have very heavy charges, so please use othe budget Freindly platform. I don't know and really surprised how the Rating is so high even though other platforms providing best serv"
+        },
+        {
+          "review_id": "play_store-2026-09-11-00092",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "I am using Shiprocket Quick for my regular local orders and the experience has been positive so far. The app is easy to understand and delivery progress can be checked quickly. I also find it useful when customers ask about their orders because the latest status is easily accessi"
+        },
+        {
+          "review_id": "play_store-2026-09-08-00424",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "it's very easy to use the app even for beginners but it doesn't have trailing stoploss for equity delivery trades and charges for 20 rs for every sell order. It will be great if the concerns are sorted"
+        },
+        {
+          "review_id": "play_store-2026-09-09-00311",
+          "rating": 4,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "Needs to work on more filters and UI list to help investors to pick the right stock of their interest like other apps. For muslim to find Sharia Compliant stock , similar to a Jain they need Satvik filter or if we need to pick some stock which have 1.Low Debt to Asset , 2.High Pr"
+        },
+        {
+          "review_id": "play_store-2026-09-07-00574",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "okay so after using it for 3 years it's best app for trading and smooth ui but sometimes it lags or just keeps buffering when markets are at high volatility so it should be improved and now I'm changing my rating because there IPO and f&O pages keep stucking and showing wrong inf"
+        },
+        {
+          "review_id": "play_store-2026-09-07-00502",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "I am concerned about the high brokerage charges for F&O trading on Groww. The brokerage cost becomes quite significant, especially for frequent option traders and small-volume trades. Please review your F&O brokerage charges and consider reducing them or introducing a zero/low-br"
+        },
+        {
+          "review_id": "play_store-2026-08-30-01645",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "I love the minimal but vast options available in the app, be it stocks, MF, commodity etc but I feel that 1 thing is lacking. In the Groww Web they recently included that feature. I'm talking about Trade directly from charts i.e., like Dhan you can simply drag drop SL and target "
+        }
+      ]
+    },
+    {
+      "theme": "Customer Support",
+      "review_count": 57,
+      "rating_breakdown": {
+        "negative": 37,
+        "positive": 14,
+        "neutral": 6
+      },
+      "sample_quotes": [
+        {
+          "review_id": "play_store-2026-09-12-00038",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "Worst experience! Groww needs brokerage only even in customer loss."
+        },
+        {
+          "review_id": "play_store-2026-09-11-00082",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "very easy to use always support for every query to resolve."
+        },
+        {
+          "review_id": "play_store-2026-09-11-00092",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "I am using Shiprocket Quick for my regular local orders and the experience has been positive so far. The app is easy to understand and delivery progress can be checked quickly. I also find it useful when customers ask about their orders because the latest status is easily accessi"
+        },
+        {
+          "review_id": "play_store-2026-09-02-01081",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "after the update, on screen button in android is not working as earlier when the groww's app technical chart is opened. just let me know by when this issue will be resolved?"
+        },
+        {
+          "review_id": "play_store-2026-09-10-00212",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "F&O Trap & Broken UI State As a stocks/funds investor, critical flaws ruin this app: F&O Trap: The F&O section has an \"Activate\" button with zero confirmation popups. One misclick triggers 24hr activation with no cancel option. Broken Segments: After misclicking, all segment chec"
+        },
+        {
+          "review_id": "play_store-2026-09-11-00150",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "whrost service last friday submitted all the documents since last friday its showing [ACCOUNT_ID] will take 24 hours i called customer care its AI picking calls no clear answer [REFERENCE_ID]"
+        },
+        {
+          "review_id": "play_store-2026-09-08-00436",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "simple and easy platform every support [ACCOUNT_ID]"
+        },
+        {
+          "review_id": "play_store-2026-09-02-01068",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "Mutual fund dashboards are automatically not [REFERENCE_ID]."
+        }
+      ]
+    },
+    {
+      "theme": "App Stability and Crashes",
+      "review_count": 39,
+      "rating_breakdown": {
+        "negative": 22,
+        "positive": 14,
+        "neutral": 3
+      },
+      "sample_quotes": [
+        {
+          "review_id": "play_store-2026-09-12-00028",
+          "rating": 2,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "There are lots of bugs in your app or server, sometimes IPO dates change, Sometimes the pre-apply option appears and disappears. Fix those things."
+        },
+        {
+          "review_id": "play_store-2026-09-12-00002",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "nowadays this app work too slowly everything feels laggy we can't see Even how many stocks we pledged and we can't see our balance properly too many glitches"
+        },
+        {
+          "review_id": "play_store-2026-09-07-00574",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "okay so after using it for 3 years it's best app for trading and smooth ui but sometimes it lags or just keeps buffering when markets are at high volatility so it should be improved and now I'm changing my rating because there IPO and f&O pages keep stucking and showing wrong inf"
+        },
+        {
+          "review_id": "play_store-2026-09-12-00013",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "groww app F and O always struck, glitches,slow moments very bad"
+        },
+        {
+          "review_id": "play_store-2026-09-11-00099",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "ipo ek bi nahi laga muje"
+        },
+        {
+          "review_id": "play_store-2026-09-04-00786",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "brokerage charges bahut jada per trade 40 plus extra charge alag."
+        },
+        {
+          "review_id": "play_store-2026-09-11-00143",
+          "rating": 2,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "very sluggish app.. day by day it is deteriorating. sometime screen freezes and u r left with no choice but to force shutdown the app and relaunch.."
+        },
+        {
+          "review_id": "play_store-2026-09-10-00239",
+          "rating": 4,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "Pls Pls Pls make it possible to change the timeline in Sector Trending Today Page. Only 1 day change can be seen, make it 3/6 months and one year also, so that one can make decisions more accurately and timely. Consider this as urgent n necessary Switching Account is not happenin"
+        }
+      ]
+    },
+    {
+      "theme": "Payments and Transfers",
+      "review_count": 23,
+      "rating_breakdown": {
+        "negative": 11,
+        "positive": 8,
+        "neutral": 4
+      },
+      "sample_quotes": [
+        {
+          "review_id": "play_store-2026-09-12-00031",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "i deposit money but I can't buy it"
+        },
+        {
+          "review_id": "play_store-2026-09-11-00092",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "I am using Shiprocket Quick for my regular local orders and the experience has been positive so far. The app is easy to understand and delivery progress can be checked quickly. I also find it useful when customers ask about their orders because the latest status is easily accessi"
+        },
+        {
+          "review_id": "play_store-2026-09-04-00777",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "I am using groww app from last 5years, this is first time, last update is not [ACCOUNT_ID]. please rollback this as soon as possible."
+        },
+        {
+          "review_id": "play_store-2026-09-11-00077",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "Platform is getting worst day by day. [ACCOUNT_ID] is worst. They don't have any solution for any of the issues being faced by the user. Today I have noticed that they subscription rate of IPOs being shown on Groww is incorrect and is far less than actual subscription rate. As ex"
+        },
+        {
+          "review_id": "play_store-2026-09-11-00117",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "Best platform for trading, simple interface makes it even better and the UPI features too makes it all rounder for any kind of financial activities"
+        },
+        {
+          "review_id": "play_store-2026-09-01-01195",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "Once MF orders are added into cart, No option to access cart and process payment for all orders at once"
+        },
+        {
+          "review_id": "play_store-2026-09-10-00239",
+          "rating": 4,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "Pls Pls Pls make it possible to change the timeline in Sector Trending Today Page. Only 1 day change can be seen, make it 3/6 months and one year also, so that one can make decisions more accurately and timely. Consider this as urgent n necessary Switching Account is not happenin"
+        },
+        {
+          "review_id": "play_store-2026-09-10-00234",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "itne bade Wale chore frauds scamsters or thieves ho ap log k kya hi batau ..? tum log external charges k naam par... itni chori krte ho na k kya hi btau...??? mere chote se profit pe bhi 600₹ external tax k naam par kar liya tum logon ne... tabhi toh tum badi badi posts walo k ba"
+        }
+      ]
+    },
+    {
+      "theme": "Withdrawals",
+      "review_count": 20,
+      "rating_breakdown": {
+        "positive": 15,
+        "negative": 4,
+        "neutral": 1
+      },
+      "sample_quotes": [
+        {
+          "review_id": "play_store-2026-09-12-00002",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "nowadays this app work too slowly everything feels laggy we can't see Even how many stocks we pledged and we can't see our balance properly too many glitches"
+        },
+        {
+          "review_id": "play_store-2026-09-09-00332",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "Good, but withdrawal money from the app should be faster"
+        },
+        {
+          "review_id": "play_store-2026-09-07-00502",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "I am concerned about the high brokerage charges for F&O trading on Groww. The brokerage cost becomes quite significant, especially for frequent option traders and small-volume trades. Please review your F&O brokerage charges and consider reducing them or introducing a zero/low-br"
+        },
+        {
+          "review_id": "play_store-2026-08-30-01645",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "I love the minimal but vast options available in the app, be it stocks, MF, commodity etc but I feel that 1 thing is lacking. In the Groww Web they recently included that feature. I'm talking about Trade directly from charts i.e., like Dhan you can simply drag drop SL and target "
+        },
+        {
+          "review_id": "play_store-2026-09-07-00561",
+          "rating": 4,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "brokerage fees is high but easy to use BTW app is good."
+        },
+        {
+          "review_id": "play_store-2026-09-02-01061",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "worest and froud app, it holds some amount without explaining the reson on withdraw time."
+        },
+        {
+          "review_id": "play_store-2026-09-07-00602",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "very very good for invest and withdraw system easy"
+        },
+        {
+          "review_id": "play_store-2026-09-10-00242",
+          "rating": 4,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "Feature Request: Add Application Number and IPO Name in UPI Mandate Descriptions When applying for IPOs, the incoming UPI mandate requests on banking/UPI apps (Google Pay, PhonePe, BHIM, Paytm) often show generic merchant names or lack clear descriptions. ​When applying for multi"
+        }
+      ]
+    },
+    {
+      "theme": "KYC and Onboarding",
+      "review_count": 19,
+      "rating_breakdown": {
+        "negative": 15,
+        "positive": 3,
+        "neutral": 1
+      },
+      "sample_quotes": [
+        {
+          "review_id": "play_store-2026-09-11-00100",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "Mai sabhi trader or investor Bhai se anurodh karata hu....Jago grahak jago....ye grow trading platform sabase jyada brockrage leta hai jisake Karan sabhi trader loss me rahata hai.....aur koi recommendations v nahi deta... .ya to ye company brockrage kam kare ...nahi Mai ye platf"
+        },
+        {
+          "review_id": "play_store-2026-09-09-00311",
+          "rating": 4,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "Needs to work on more filters and UI list to help investors to pick the right stock of their interest like other apps. For muslim to find Sharia Compliant stock , similar to a Jain they need Satvik filter or if we need to pick some stock which have 1.Low Debt to Asset , 2.High Pr"
+        },
+        {
+          "review_id": "play_store-2026-09-01-01166",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "my re kyc option is not showing please check immediately.im waiting form last 5 days"
+        },
+        {
+          "review_id": "play_store-2026-09-11-00150",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "whrost service last friday submitted all the documents since last friday its showing [ACCOUNT_ID] will take 24 hours i called customer care its AI picking calls no clear answer [REFERENCE_ID]"
+        },
+        {
+          "review_id": "play_store-2026-09-01-01111",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "Complete your KYC & Esign Process 34.1k Coin 1.Click on the link below. 2.Download the App. 3.Register on the App via mobile number present in your device. 4. Complete your KYC & Esign Process to claim this reward. 5.Open Demat Account. 6.Buy stocks worth Rs.50 to claim this rewa"
+        },
+        {
+          "review_id": "play_store-2026-09-10-00184",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "its very wrong you are asking pan details to use the app. What do those people will do who want to watch market details and don't have pan or dont want to create account with groww The problem is that app automatically closes when you dont have entered your details [REFERENCE_ID]"
+        },
+        {
+          "review_id": "play_store-2026-09-10-00234",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "itne bade Wale chore frauds scamsters or thieves ho ap log k kya hi batau ..? tum log external charges k naam par... itni chori krte ho na k kya hi btau...??? mere chote se profit pe bhi 600₹ external tax k naam par kar liya tum logon ne... tabhi toh tum badi badi posts walo k ba"
+        },
+        {
+          "review_id": "play_store-2026-08-30-01503",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "I don't like the current way of showing income and profit of companies , please update back to the previous design."
+        }
+      ]
+    }
+  ],
+  "top_keywords": [
+    [
+      "groww",
+      107
+    ],
+    [
+      "account",
+      84
+    ],
+    [
+      "good",
+      81
+    ],
+    [
+      "hai",
+      75
+    ],
+    [
+      "easy",
+      57
+    ],
+    [
+      "you",
+      57
+    ],
+    [
+      "update",
+      56
+    ],
+    [
+      "please",
+      53
+    ],
+    [
+      "trading",
+      46
+    ],
+    [
+      "best",
+      42
+    ],
+    [
+      "they",
+      41
+    ],
+    [
+      "your",
+      41
+    ],
+    [
+      "option",
+      40
+    ],
+    [
+      "stock",
+      39
+    ],
+    [
+      "charges",
+      38
+    ],
+    [
+      "chart",
+      38
+    ],
+    [
+      "market",
+      37
+    ],
+    [
+      "experience",
+      34
+    ],
+    [
+      "will",
+      34
+    ],
+    [
+      "worst",
+      33
+    ],
+    [
+      "one",
+      32
+    ],
+    [
+      "platform",
+      31
+    ],
+    [
+      "grow",
+      31
+    ],
+    [
+      "money",
+      31
+    ],
+    [
+      "brokerage",
+      29
+    ],
+    [
+      "any",
+      29
+    ],
+    [
+      "application",
+      28
+    ],
+    [
+      "its",
+      27
+    ],
+    [
+      "even",
+      27
+    ],
+    [
+      "don",
+      27
+    ]
+  ],
+  "api_free_strategy": {
+    "external_api_calls": 0,
+    "working_set_limit": 500,
+    "method": "Deterministic keyword grouping, sentiment counts, representative evidence, and local theme summaries.",
+    "expected_output": "Up to 5 themes with name, summary, review_count, sentiment, and supporting review_ids."
+  }
+}

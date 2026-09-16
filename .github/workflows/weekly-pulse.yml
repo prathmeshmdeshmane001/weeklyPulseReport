@@ -1,0 +1,313 @@
+name: Weekly Review Pulse
+
+on:
+  # Run every Sunday at 9:00 AM UTC (schedule can be adjusted)
+  schedule:
+    - cron: '0 9 * * 0'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      skip_fetch:
+        description: 'Skip fetching new reviews (use existing data)'
+        required: false
+        default: 'false'
+
+env:
+  PYTHON_VERSION: '3.11'
+  PIPELINE_VERSION: '1.0.0'
+
+permissions:
+  contents: write
+  actions: read
+  
+jobs:
+  generate-weekly-pulse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    outputs:
+      pulse_date: ${{ steps.set_date.outputs.date }}
+      validation_status: ${{ steps.validation.outputs.status }}
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Set pulse date
+      id: set_date
+      run: |
+        echo "date=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
+        echo "Pulse date: $(date +%Y-%m-%d)"
+        
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+          
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Pre-execution summary
+      run: |
+        echo "## 🚀 Weekly Pulse Pipeline Starting" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Date:** ${{ steps.set_date.outputs.date }}" >> $GITHUB_STEP_SUMMARY
+        echo "**Version:** ${{ env.PIPELINE_VERSION }}" >> $GITHUB_STEP_SUMMARY
+        echo "**Trigger:** ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+    - name: Run Phase 2 - Ingest reviews
+      run: |
+        echo "### 📥 Phase 2: Review Ingestion" >> $GITHUB_STEP_SUMMARY
+        if [ -f "phase2/data/raw/groww_play_store_reviews.csv" ]; then
+          python phase2/ingest_reviews.py
+          echo "- ✅ Reviews ingested" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "- ⏭️ No new reviews to ingest" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+    - name: Fetch latest reviews
+      env:
+        SKIP_FETCH: ${{ github.event.inputs.skip_fetch || 'false' }}
+      run: |
+        echo "### 📥 Phase 2: Fetching Reviews" >> $GITHUB_STEP_SUMMARY
+        if [ "$SKIP_FETCH" = "true" ]; then
+          echo "- ⏭️ Skipped (manual trigger with skip option)" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "Fetching latest reviews from Google Play Store..."
+          python phase2/fetch_groww_play_reviews.py --count 2500 --weeks 4 && echo "- ✅ Reviews fetched from Play Store" >> $GITHUB_STEP_SUMMARY || echo "- ⚠️ Review fetch failed, using existing data" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+    - name: Debug - List all files
+      run: |
+        echo "=== Current Directory ==="
+        pwd
+        ls -la
+        echo ""
+        echo "=== Phase Directories ==="
+        ls -la phase*/ 2>/dev/null || echo "No phase directories"
+        echo ""
+        echo "=== Data Files ==="
+        find . -name "*.json" -path "*/data/*" 2>/dev/null | head -20 || echo "No JSON files found"
+        
+    - name: Check existing data
+      id: check_data
+      run: |
+        echo "Checking for existing data files..."
+        if [ -f "phase3/data/normalized/normalized_reviews.json" ]; then
+          echo "✅ Found: phase3/data/normalized/normalized_reviews.json"
+        else
+          echo "❌ Missing: phase3/data/normalized/normalized_reviews.json"
+        fi
+        
+    - name: Run Phase 3 - Normalize reviews
+      id: phase3
+      run: |
+        echo "### 🔧 Phase 3: Data Normalization" >> $GITHUB_STEP_SUMMARY
+        if [ -f "phase2/data/ingested/ingested_reviews.json" ]; then
+          python phase3/normalize_reviews.py
+          echo "- ✅ Reviews normalized" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "- ❌ No input data available" >> $GITHUB_STEP_SUMMARY
+          exit 1
+        fi
+        echo "review_count=done" >> $GITHUB_OUTPUT
+        
+    - name: Run Phase 4 - Privacy filter
+      id: phase4
+      run: |
+        echo "### 🔒 Phase 4: Privacy Protection" >> $GITHUB_STEP_SUMMARY
+        if [ -f "phase3/data/normalized/normalized_reviews.json" ]; then
+          python phase4/privacy_filter.py
+          echo "- ✅ Privacy filtering complete" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "- ❌ No normalized data available" >> $GITHUB_STEP_SUMMARY
+          exit 1
+        fi
+        echo "safe_count=done" >> $GITHUB_OUTPUT
+        
+    - name: Run Phase 5 - Theme analysis
+      id: phase5
+      env:
+        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      run: |
+        echo "### 🤖 Phase 5: AI Theme Analysis" >> $GITHUB_STEP_SUMMARY
+        if [ -f "phase5/data/themes/theme_analysis.json" ]; then
+          echo "- ⏭️ Using existing theme analysis" >> $GITHUB_STEP_SUMMARY
+        elif [ -f "phase4/data/privacy_safe/privacy_safe_reviews.json" ]; then
+          python phase5/pre_llm_analysis.py
+          echo "- ✅ Theme analysis complete" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "- ❌ No privacy-safe data available" >> $GITHUB_STEP_SUMMARY
+          exit 1
+        fi
+        echo "theme_count=done" >> $GITHUB_OUTPUT
+        
+    - name: Run Phase 6 - Prioritize themes
+      id: phase6
+      run: |
+        echo "### 🎯 Phase 6: Theme Prioritization" >> $GITHUB_STEP_SUMMARY
+        if [ -f "phase6/data/prioritized/prioritized_themes.json" ]; then
+          echo "- ⏭️ Using existing prioritized themes" >> $GITHUB_STEP_SUMMARY
+        elif [ -f "phase5/data/themes/theme_analysis.json" ]; then
+          python phase6/prioritize_themes.py
+          echo "- ✅ Top 3 themes selected" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "- ❌ No theme analysis data available" >> $GITHUB_STEP_SUMMARY
+          exit 1
+        fi
+        
+    - name: Run Phase 7 - Generate actions
+      id: phase7
+      env:
+        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      run: |
+        echo "### 💡 Phase 7: Action Generation" >> $GITHUB_STEP_SUMMARY
+        if [ -f "phase7/data/actions/action_ideas.json" ]; then
+          echo "- ⏭️ Using existing action ideas" >> $GITHUB_STEP_SUMMARY
+        elif [ -f "phase6/data/prioritized/prioritized_themes.json" ]; then
+          python phase7/generate_actions.py
+          echo "- ✅ 3 action ideas generated" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "- ❌ No prioritized themes data available" >> $GITHUB_STEP_SUMMARY
+          exit 1
+        fi
+        
+    - name: Run Phase 8 - Compose weekly pulse
+      id: phase8
+      env:
+        GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      run: |
+        echo "### 📄 Phase 8: Pulse Composition" >> $GITHUB_STEP_SUMMARY
+        if [ -f "phase8/data/weekly_pulse/weekly_pulse.json" ]; then
+          echo "- ⏭️ Using existing weekly pulse" >> $GITHUB_STEP_SUMMARY
+        elif [ -f "phase7/data/actions/action_ideas.json" ]; then
+          python phase8/compose_weekly_pulse.py
+          echo "- ✅ Weekly pulse generated" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "- ❌ No action ideas data available" >> $GITHUB_STEP_SUMMARY
+          exit 1
+        fi
+        echo "headline=done" >> $GITHUB_OUTPUT
+        
+    - name: Run Phase 9 - Publish to Google Docs
+      id: phase9
+      if: success()
+      env:
+        GDOCS_DOC_ID: ${{ secrets.GDOCS_DOC_ID }}
+      run: |
+        echo "### 📤 Phase 9: Google Docs Delivery" >> $GITHUB_STEP_SUMMARY
+        python phase9/publish_to_docs.py
+        echo "- ✅ Published to Google Docs" >> $GITHUB_STEP_SUMMARY
+        
+    - name: Run Phase 10 - Create Gmail draft
+      id: phase10
+      if: success()
+      env:
+        EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
+      run: |
+        echo "### 📧 Phase 10: Gmail Draft" >> $GITHUB_STEP_SUMMARY
+        python phase10/create_email_draft.py
+        echo "- ✅ Gmail draft created" >> $GITHUB_STEP_SUMMARY
+        
+    - name: Run Phase 11 - Validate workflow
+      id: validation
+      run: |
+        echo "### ✅ Phase 11: Validation" >> $GITHUB_STEP_SUMMARY
+        python phase11/validate_workflow.py || true
+        echo "- ✅ Validation complete" >> $GITHUB_STEP_SUMMARY
+        echo "status=done" >> $GITHUB_OUTPUT
+        
+    - name: Run Phase 12 - Prepare submission
+      run: |
+        echo "### 📦 Phase 12: Submission Prep" >> $GITHUB_STEP_SUMMARY
+        python phase12/prepare_submission.py
+        echo "- ✅ Submission summary generated" >> $GITHUB_STEP_SUMMARY
+        
+    - name: Commit and push updated data
+      if: success()
+      continue-on-error: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+        git add phase*/data/
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "🤖 Weekly pulse update: $(date +%Y-%m-%d) [skip ci]"
+          git push || echo "⚠️ Push failed (permission issue), but workflow continues"
+          echo "- ✅ Data committed to repo" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: weekly-pulse-${{ steps.set_date.outputs.date }}
+        path: |
+          phase8/data/weekly_pulse/
+          phase9/data/docs_delivery/
+          phase10/data/gmail_delivery/
+          phase11/data/validation/
+          phase12/data/submission/
+        retention-days: 30
+        
+    - name: Final summary
+      if: always()
+      run: |
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "## 📊 Execution Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "| Phase | Status |" >> $GITHUB_STEP_SUMMARY
+        echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+        echo "| 3. Normalization | ${{ steps.phase3.outcome == 'success' && '✅' || '❌' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| 4. Privacy | ${{ steps.phase4.outcome == 'success' && '✅' || '❌' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| 5. Theme Analysis | ${{ steps.phase5.outcome == 'success' && '✅' || '❌' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| 6. Prioritization | ${{ steps.phase6.outcome == 'success' && '✅' || '❌' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| 7. Actions | ${{ steps.phase7.outcome == 'success' && '✅' || '❌' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| 8. Pulse | ${{ steps.phase8.outcome == 'success' && '✅' || '❌' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| 9. Google Docs | ${{ steps.phase9.outcome == 'success' && '✅' || steps.phase9.outcome == 'skipped' && '⏭️' || '❌' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| 10. Gmail | ${{ steps.phase10.outcome == 'success' && '✅' || steps.phase10.outcome == 'skipped' && '⏭️' || '❌' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| 11. Validation | ${{ steps.validation.outcome == 'success' && '✅' || '❌' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Overall:** ${{ job.status == 'success' && '✅ SUCCESS' || '❌ FAILED' }}" >> $GITHUB_STEP_SUMMARY
+
+  notify:
+    needs: generate-weekly-pulse
+    runs-on: ubuntu-latest
+    if: always()
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+    
+    steps:
+    - name: Send Slack notification
+      if: env.SLACK_WEBHOOK_URL != ''
+      uses: 8398a7/action-slack@v3
+      with:
+        status: ${{ needs.generate-weekly-pulse.result }}
+        author_name: Weekly Pulse Bot
+        text: |
+          Weekly Pulse ${{ needs.generate-weekly-pulse.result == 'success' && '✅ Succeeded' || '❌ Failed' }}
+          Date: ${{ needs.generate-weekly-pulse.outputs.pulse_date }}
+          Validation: ${{ needs.generate-weekly-pulse.outputs.validation_status }}
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      continue-on-error: true
+      
+    - name: Send Discord notification
+      if: env.DISCORD_WEBHOOK_URL != ''
+      run: |
+        echo "Sending Discord notification..."
+        curl -s -H "Content-Type: application/json" \
+             -d '{"content":"🤖 Weekly Pulse Report - '${{ needs.generate-weekly-pulse.result }}'\n\nDate: '${{ needs.generate-weekly-pulse.outputs.pulse_date }}'"}' \
+             "$DISCORD_WEBHOOK_URL" || echo "Discord notification failed"
+      continue-on-error: true

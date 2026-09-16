@@ -1,0 +1,76 @@
+review_text,review_title,rating,date,platform,app_version,thumbs_up_count
+"Worst app ever. Payments keep failing and customer support is useless.","Terrible experience",1,2026-03-01,play_store,4.3.0,12
+"Really good app for everyday banking. Fast and reliable.","Good banking app",4,2026-03-02,play_store,4.3.0,5
+"Onboarding process is way too long. Took me 30 minutes to sign up.","Long onboarding",2,2026-03-03,play_store,4.3.0,8
+"KYC verification failed 3 times. Each time I had to start over.","KYC failures",1,2026-03-04,play_store,4.3.0,15
+"The withdrawal process is confusing. I cannot find where to withdraw.","Confusing withdrawal",2,2026-03-05,play_store,4.3.0,6
+"Fast and secure. I trust this app with my finances.","Trustworthy",5,2026-03-06,play_store,4.3.0,3
+"App freezes when I open the statements section.","Statements freeze",1,2026-03-07,play_store,4.3.0,9
+"Everything works perfectly. No complaints at all.","Perfect app",5,2026-03-08,play_store,4.3.0,2
+"I have been trying to reach support for days. No response at all.","Support is dead",1,2026-03-09,play_store,4.3.0,20
+"Notification system is great. I get alerts for every transaction.","Great alerts",4,2026-03-10,play_store,4.3.0,4
+"Crashes every time I try to make a payment on Android 14.","Crash on payment",1,2026-03-11,play_store,4.3.0,11
+"The app needs a dark mode badly.","Need dark mode",3,2026-03-12,play_store,4.3.0,7
+"My withdrawal was stuck for 3 days. Had to contact support to fix it.","Stuck withdrawal",1,2026-03-13,play_store,4.3.0,14
+"Very intuitive design. Easy to navigate and find features.","Good design",4,2026-03-14,play_store,4.3.0,3
+"Payment keeps failing on my Samsung Galaxy. Works fine on wifi only.","Payment wifi only",1,2026-03-15,play_store,4.3.1,8
+"KYC selfie verification never accepts my photo. Tried 10 times.","Selfie KYC broken",1,2026-03-16,play_store,4.3.1,18
+"Best UPI app I have used. Instant transfers every time.","Best UPI",5,2026-03-17,play_store,4.3.1,6
+"Onboarding email verification link expired before I could click it.","Email link expired",2,2026-03-18,play_store,4.3.1,4
+"App crashes when switching between accounts.","Account switch crash",1,2026-03-19,play_store,4.3.1,9
+"Excellent customer support. Got my issue fixed in one call.","Great support",5,2026-03-20,play_store,4.3.1,2
+"Withdrawal fee is too high compared to other apps.","High withdrawal fee",2,2026-03-21,play_store,4.3.1,11
+"The budget tracking feature helps me save money every month.","Budget tracking",5,2026-03-22,play_store,4.3.1,5
+"KYC keeps rejecting my documents saying poor quality. Camera is fine.","Document rejection",1,2026-03-23,play_store,4.3.1,13
+"Simple app. Does what it promises without unnecessary features.","Simple and effective",4,2026-03-24,play_store,4.3.1,3
+"Tried to withdraw money and the app showed success but nothing happened.","Fake success withdrawal",1,2026-03-25,play_store,4.3.1,16
+"Support chat agent asked me to wait and then disconnected.","Chat disconnected",1,2026-03-26,play_store,4.3.1,10
+"App updates too frequently. Every week there is a new version.","Too many updates",3,2026-03-27,play_store,4.3.1,4
+"Payment to electricity bill went through smoothly. Happy customer.","Bill payment works",5,2026-03-28,play_store,4.3.1,2
+"Crash crash crash. That is all this app does on my Redmi phone.","Constant crashes Redmi",1,2026-03-29,play_store,4.3.1,22
+"The QR scanner is fast and accurate. Payments in seconds.","Fast QR",5,2026-03-30,play_store,4.3.1,7
+"Onboarding phone number OTP never arrives. Tried 5 times.","OTP not received",1,2026-03-31,play_store,4.3.1,12
+"Good app but withdrawal should be faster. Takes 2-3 days.","Slow withdrawal",3,2026-04-01,play_store,4.3.2,6
+"KYC video call quality is terrible. Keeps buffering.","Bad video call",2,2026-04-02,play_store,4.3.2,8
+"Love the cashback offers on utility payments.","Cashback offers",5,2026-04-03,play_store,4.3.2,4
+"App not compatible with Android 10. Forces me to update my phone.","Compatibility issue",1,2026-04-04,play_store,4.3.2,9
+"Customer support resolved my blocked account within 24 hours.","Fast resolution",4,2026-04-05,play_store,4.3.2,3
+"Payment gateway error 504 every time I try to pay more than 5000.","Gateway error",1,2026-04-06,play_store,4.3.2,15
+"The spending analytics are beautiful and informative.","Nice analytics",5,2026-04-07,play_store,4.3.2,5
+"Withdrawal to Paytm wallet does not work at all.","Paytm withdrawal broken",1,2026-04-08,play_store,4.3.2,7
+"Onboarding address proof upload fails every single time.","Address upload fail",1,2026-04-09,play_store,4.3.2,10
+"Reliable app. Using it for 6 months without any major issues.","Reliable",4,2026-04-10,play_store,4.3.2,3
+"KYC process now takes only 5 minutes. Great improvement.","KYC fast now",5,2026-04-11,play_store,4.3.2,6
+"App crashes after the latest update on my Pixel 7.","Pixel 7 crash",1,2026-04-12,play_store,4.3.2,8
+"Support takes forever to respond. Need more staff.","Slow support",2,2026-04-13,play_store,4.3.2,11
+"Payment reminders are very helpful. Never miss a due date now.","Payment reminders",5,2026-04-14,play_store,4.3.2,4
+"Withdrawal amount showing different from what I requested.","Wrong amount",1,2026-04-15,play_store,4.3.2,13
+"Clean and modern interface. A pleasure to use daily.","Modern interface",5,2026-04-16,play_store,4.3.2,3
+"KYC Aadhaar OTP verification times out every single time.","Aadhaar timeout",1,2026-04-17,play_store,4.3.2,14
+"App is good but please add a dark theme option.","Want dark theme",3,2026-04-18,play_store,4.3.2,19
+"Onboarding requires too many permissions. Feels invasive.","Too many permissions",2,2026-04-19,play_store,4.3.2,7
+"Payment to wrong number and no way to reverse it. Lost 2000 rupees.","Cannot reverse payment",1,2026-04-20,play_store,4.3.2,21
+"The mutual fund investment feature is great addition.","Good investments",4,2026-04-21,play_store,4.3.2,5
+"Crash when trying to view old transaction history beyond 3 months.","History crash",1,2026-04-22,play_store,4.3.2,6
+"Support Twitter handle responds faster than the in-app chat.","Twitter support better",3,2026-04-23,play_store,4.3.2,8
+"Withdrawal processing time has improved. Got money in 4 hours.","Faster withdrawal",4,2026-04-24,play_store,4.3.2,4
+"KYC re-verification demand after 6 months is annoying.","Re-KYC annoying",2,2026-04-25,play_store,4.3.2,9
+"Love the split bill feature for group dinners.","Split bill",5,2026-04-26,play_store,4.3.3,6
+"App hangs on splash screen for 15 seconds before loading.","Splash hang",2,2026-04-27,play_store,4.3.3,5
+"Customer support finally fixed my issue after 3 follow-ups.","Issue fixed eventually",3,2026-04-28,play_store,4.3.3,3
+"Payment declined at POS terminal. Very embarrassing situation.","POS decline",1,2026-04-29,play_store,4.3.3,12
+"Onboarding video KYC agent was helpful and polite.","Good KYC agent",4,2026-04-30,play_store,4.3.3,2
+"App drains battery fast when running in background.","Battery drain",2,2026-05-01,play_store,4.3.3,8
+"Withdrawal to bank works perfectly now. No more delays.","Withdrawal fixed",5,2026-05-02,play_store,4.3.3,4
+"The loan section shows pre-approved offers. Very convenient.","Loan offers",4,2026-05-03,play_store,4.3.3,3
+"KYC failed because app could not detect my face with glasses on.","Glasses KYC fail",1,2026-05-04,play_store,4.3.3,7
+"Crash on opening notification center. Happens every day.","Notification crash",1,2026-05-05,play_store,4.3.3,9
+"Support is much better now. Got response within 1 hour.","Improved support",4,2026-05-06,play_store,4.3.3,3
+"Best app for UPI payments. Never had a single failure.","Best for UPI",5,2026-05-07,play_store,4.3.3,5
+"Onboarding income proof upload keeps saying file too large.","File size limit",2,2026-05-08,play_store,4.3.3,6
+"Payment history search is broken. Cannot find old transactions.","Search broken",1,2026-05-09,play_store,4.3.3,8
+"App runs smoothly on my OnePlus. No crashes or lags.","Smooth on OnePlus",5,2026-05-10,play_store,4.3.3,2
+"Withdrawal limit should be increased for verified users.","Increase limits",3,2026-05-11,play_store,4.3.3,10
+"KYC completed successfully on first try this time.","KYC worked",4,2026-05-12,play_store,4.3.3,2
+"Crash when I rotate my phone during a payment flow.","Rotation crash",1,2026-05-13,play_store,4.3.3,5
+"Support gave wrong information and wasted my time.","Wrong info from support",1,2026-05-14,play_store,4.3.3,7

@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-09-17T00:37:29.444640",
+  "overall_valid": true,
+  "phases_validated": 8,
+  "constraints_met": {
+    "max_5_themes": true,
+    "top_3_themes_in_report": true,
+    "3_real_quotes": true,
+    "3_action_ideas": true,
+    "mcp_docs_integration": true,
+    "mcp_gmail_integration": true,
+    "privacy_protection": true
+  },
+  "phase_results": {
+    "phase3_normalization": {
+      "valid": true,
+      "review_count": 503,
+      "fields_present": [
+        "review_text",
+        "rating",
+        "platform",
+        "date"
+      ]
+    },
+    "phase4_privacy": {
+      "valid": true,
+      "privacy_safe_count": 503,
+      "pii_issues_in_sample": [],
+      "note": "PII check on sample - some patterns may be false positives"
+    },
+    "phase5_themes": {
+      "valid": true,
+      "theme_count": 5,
+      "within_limit": true,
+      "themes": [
+        "Product Experience and Features",
+        "Customer Support",
+        "App Stability and Crashes",
+        "Payments and Transfers",
+        "Withdrawals"
+      ]
+    },
+    "phase6_prioritization": {
+      "valid": true,
+      "top_theme_count": 3,
+      "quote_count": 3,
+      "themes": [
+        "Customer Support",
+        "Product Experience and Features",
+        "App Stability and Crashes"
+      ]
+    },
+    "phase7_actions": {
+      "valid": true,
+      "action_count": 3,
+      "actions": [
+        "Audit unresolved support journeys and create a weekly queue ...",
+        "Review the most common feedback examples and convert recurri...",
+        "Prioritize crash and latency diagnostics for the most recent..."
+      ]
+    },
+    "phase8_pulse": {
+      "valid": true,
+      "has_headline": true,
+      "top_themes_count": 3,
+      "quotes_count": 3,
+      "actions_count": 3
+    },
+    "phase9_docs": {
+      "valid": true,
+      "mcp_used": true,
+      "document_url": "https://docs.google.com/document/d/1EBODRQUvYK5oBVDrdKmIhqGB9EOwIz0qCFLQNdpPh3s/edit",
+      "timestamp": "2026-09-17T00:37:29.341204"
+    },
+    "phase10_gmail": {
+      "valid": true,
+      "mcp_used": true,
+      "recipient": "prathmeshmdeshmane@gmail.com",
+      "subject": "Weekly App Review Pulse - 2026-09-17",
+      "timestamp": "2026-09-17T00:37:29.406234"
+    }
+  }
+}

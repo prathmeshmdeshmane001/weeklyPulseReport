@@ -1,0 +1,76 @@
+review_text,review_title,rating,date,platform,app_version
+"Love this app, makes managing money so easy!","Great app",5,2026-03-01,app_store,4.3.0
+"The app crashes every time I try to check my statement.","Crashes on statements",1,2026-03-02,app_store,4.3.0
+"KYC process took forever and kept failing. Very frustrating experience.","KYC issues",2,2026-03-03,app_store,4.3.0
+"Payments are smooth and instant. Best finance app I have used.","Smooth payments",5,2026-03-04,app_store,4.3.0
+"Withdrawal feature is broken. Tried 5 times and nothing happened.","Broken withdrawals",1,2026-03-05,app_store,4.3.0
+"The onboarding was confusing. I almost gave up signing up.","Bad onboarding",2,2026-03-06,app_store,4.3.0
+"App is decent but the UI feels outdated compared to competitors.","Outdated UI",3,2026-03-07,app_store,4.3.0
+"I love the instant notifications for every transaction.","Great notifications",5,2026-03-08,app_store,4.3.0
+"Customer support never responds. Been waiting 2 weeks for a reply.","No support",1,2026-03-09,app_store,4.3.0
+"Finally a finance app that actually works. Highly recommend!","Works great",5,2026-03-10,app_store,4.3.0
+"App crashes randomly on my iPhone 13. Needs urgent fix.","Random crashes",1,2026-03-11,app_store,4.3.0
+"Easy to transfer money between accounts. Very convenient.","Easy transfers",4,2026-03-12,app_store,4.3.0
+"My account got locked after KYC and no one can help me unlock it.","Account locked after KYC",1,2026-03-13,app_store,4.3.0
+"Statements download feature is fantastic. Saves me a lot of time.","Good statements",4,2026-03-14,app_store,4.3.0
+"Payment failed three times today. Lost confidence in this app.","Payment failures",1,2026-03-15,app_store,4.3.1
+"Very intuitive interface. Found everything I needed quickly.","Intuitive UI",5,2026-03-16,app_store,4.3.1
+"Withdrawal got stuck for 4 days. No update from the app or support.","Stuck withdrawal",1,2026-03-17,app_store,4.3.1
+"KYC keeps asking for same documents again and again.","Repetitive KYC",2,2026-03-18,app_store,4.3.1
+"App lags badly when scrolling through transaction history.","Laggy transactions",2,2026-03-19,app_store,4.3.1
+"Best banking app available. Fast, clean, and reliable.","Best banking app",5,2026-03-20,app_store,4.3.1
+"Onboarding took 45 minutes. Way too many steps for a simple account.","Too many steps",2,2026-03-21,app_store,4.3.1
+"Support team finally responded after 10 days. Unacceptable.","Slow support",1,2026-03-22,app_store,4.3.1
+"The bill payment feature saved me from late fees. Thank you!","Bill payments work",5,2026-03-23,app_store,4.3.1
+"Crashes when I try to add a new beneficiary. Very annoying.","Crash on beneficiary",1,2026-03-24,app_store,4.3.1
+"Dark mode would be really nice. The white screen hurts my eyes at night.","Need dark mode",3,2026-03-25,app_store,4.3.1
+"Withdrawal to bank account took 5 business days. Way too slow.","Slow withdrawal",2,2026-03-26,app_store,4.3.1
+"I can see all my expenses categorized. Really helpful for budgeting.","Good budgeting",4,2026-03-27,app_store,4.3.1
+"KYC verification video call kept disconnecting. Had to try 4 times.","KYC video issues",1,2026-03-28,app_store,4.3.1
+"App is smooth and fast on my new iPhone. No complaints.","Fast and smooth",5,2026-03-29,app_store,4.3.1
+"Customer care chat bot is useless. Cannot solve any real problem.","Useless chatbot",1,2026-03-30,app_store,4.3.1
+"Scheduled payments feature is great. Set it and forget it.","Scheduled payments",5,2026-03-31,app_store,4.3.1
+"App crashed during a payment and now the money is gone but not received.","Money lost in crash",1,2026-04-01,app_store,4.3.2
+"Finally got my KYC approved after 2 weeks of trying. Relief.","KYC eventually worked",3,2026-04-02,app_store,4.3.2
+"The referral bonus program is amazing. Got 500 rupees for free!","Good referrals",5,2026-04-03,app_store,4.3.2
+"Why does withdrawal take so long? Other apps do it instantly.","Withdrawal too slow",2,2026-04-04,app_store,4.3.2
+"App freezes on the home screen every morning. Have to force close.","Morning freeze bug",1,2026-04-05,app_store,4.3.2
+"Support replied within 2 hours this time. Much better than before.","Support improved",4,2026-04-06,app_store,4.3.2
+"Onboarding video verification failed because of poor lighting detection.","Video verification fails",2,2026-04-07,app_store,4.3.2
+"Recurring payments work perfectly. Never missed a bill since using this.","Recurring payments",5,2026-04-08,app_store,4.3.2
+"The app keeps logging me out every few hours. Very irritating.","Random logouts",2,2026-04-09,app_store,4.3.2
+"Transaction history loads fast and is well organized.","Good history",4,2026-04-10,app_store,4.3.2
+"Payment to merchant failed with no error message. Just spinning wheel.","Payment no error",1,2026-04-11,app_store,4.3.2
+"The app takes too long to open. Almost 10 seconds on my phone.","Slow startup",2,2026-04-12,app_store,4.3.2
+"Love the QR code scanner for quick payments.","QR payments rock",5,2026-04-13,app_store,4.3.2
+"KYC document upload keeps timing out on mobile data.","KYC upload timeout",1,2026-04-14,app_store,4.3.2
+"Sent money to wrong UPI ID and support says they cannot help.","Wrong transfer no help",1,2026-04-15,app_store,4.3.2
+"App is great for daily use. Quick and responsive.","Quick daily use",4,2026-04-16,app_store,4.3.2
+"Withdrawal limit is too low. Should allow more per day.","Low withdrawal limit",3,2026-04-17,app_store,4.3.2
+"Crash every time I open the investment section. Fix this please.","Investment crash",1,2026-04-18,app_store,4.3.2
+"Simple and clean UI. Much better than other banking apps.","Clean UI",5,2026-04-19,app_store,4.3.2
+"Support ticket has been open for 3 weeks with no resolution.","Ticket unresolved",1,2026-04-20,app_store,4.3.2
+"Fingerprint login is quick and secure. Great feature.","Good biometrics",5,2026-04-21,app_store,4.3.2
+"Onboarding address verification rejected my valid address twice.","Address verification bug",2,2026-04-22,app_store,4.3.2
+"Payment split feature with friends is awesome!","Payment split",5,2026-04-23,app_store,4.3.2
+"App crashed and all my saved beneficiaries disappeared.","Beneficiaries gone",1,2026-04-24,app_store,4.3.2
+"Withdrawal was processed but money never arrived in my bank.","Missing withdrawal",1,2026-04-25,app_store,4.3.3
+"KYC process is much smoother now after the update.","KYC improved",4,2026-04-26,app_store,4.3.3
+"Love the spending insights and monthly summary feature.","Spending insights",5,2026-04-27,app_store,4.3.3
+"Customer support hung up on me during a call. Extremely rude.","Rude support",1,2026-04-28,app_store,4.3.3
+"App works well most of the time but crashes under heavy use.","Occasional crashes",3,2026-04-29,app_store,4.3.3
+"The autopay feature for bills is a lifesaver.","Autopay works",5,2026-04-30,app_store,4.3.3
+"Onboarding PAN card verification is broken for new users.","PAN verification bug",1,2026-05-01,app_store,4.3.3
+"Smooth experience overall. Rarely face any issues.","Smooth experience",4,2026-05-02,app_store,4.3.3
+"Withdrawal to my savings account was instant this time! Great improvement.","Fast withdrawal",5,2026-05-03,app_store,4.3.3
+"App crashes on iPad. Not optimized for tablets at all.","iPad crashes",1,2026-05-04,app_store,4.3.3
+"The rewards program makes using this app worthwhile.","Good rewards",4,2026-05-05,app_store,4.3.3
+"Payment failed during checkout at a store. Very embarrassing.","Checkout failure",1,2026-05-06,app_store,4.3.3
+"Support team resolved my issue quickly this time. Impressed.","Quick support",5,2026-05-07,app_store,4.3.3
+"KYC Aadhaar verification keeps failing with network error.","Aadhaar KYC error",1,2026-05-08,app_store,4.3.3
+"Great app for tracking all my expenses in one place.","Expense tracking",5,2026-05-09,app_store,4.3.3
+"The app needs a proper widget for quick balance check.","Need widget",3,2026-05-10,app_store,4.3.3
+"Withdrawal request shows completed but bank says no credit received.","Withdrawal not credited",1,2026-05-11,app_store,4.3.3
+"Multiple crashes today. Something is seriously wrong with the latest update.","Update broke app",1,2026-05-12,app_store,4.3.3
+"Very satisfied with the app. Use it daily for all payments.","Daily use satisfied",5,2026-05-13,app_store,4.3.3
+"Support email bounces back. How am I supposed to get help?","Email bounces",1,2026-05-14,app_store,4.3.3

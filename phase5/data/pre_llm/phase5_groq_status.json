@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "error": "HTTP 403: Request to POST /openai/v1/chat/completions on api.groq.com not allowed by policy\n",
+  "usage": {}
+}

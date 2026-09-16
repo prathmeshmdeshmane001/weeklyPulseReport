@@ -1,0 +1,12 @@
+{
+  "total_files": 1,
+  "total_loaded": 2500,
+  "valid_reviews": 2500,
+  "invalid_reviews": 0,
+  "invalid_details": [],
+  "within_date_window": 2500,
+  "outside_date_window": 0,
+  "duplicates_removed": 825,
+  "final_count": 1675,
+  "load_errors": []
+}

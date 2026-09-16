@@ -1,0 +1,343 @@
+{
+  "model": "llama-3.3-70b-versatile",
+  "purpose": "Phase 7 action idea generation",
+  "constraints": {
+    "action_count": 3,
+    "ground_actions_in_themes": true,
+    "avoid_vague_recommendations": true,
+    "return_compact_json": true
+  },
+  "input": {
+    "top_themes": [
+      {
+        "theme_name": "Product Experience and Features",
+        "summary": "Users repeatedly mention product experience and features in recent reviews.",
+        "sentiment": "mostly_positive",
+        "review_count": 145,
+        "rating_breakdown": {
+          "positive": 69,
+          "negative": 42,
+          "neutral": 34
+        },
+        "supporting_review_ids": [
+          "play_store-2026-05-14-00017",
+          "play_store-2026-05-13-00154",
+          "play_store-2026-05-11-00440",
+          "play_store-2026-05-13-00130",
+          "play_store-2026-05-09-00545",
+          "play_store-2026-05-08-00628",
+          "play_store-2026-05-13-00193",
+          "play_store-2026-05-10-00453",
+          "play_store-2026-05-13-00178",
+          "play_store-2026-04-29-01051",
+          "play_store-2026-04-25-01234",
+          "play_store-2026-05-13-00217",
+          "play_store-2026-05-09-00518",
+          "play_store-2026-05-12-00259",
+          "play_store-2026-04-27-01114",
+          "play_store-2026-04-30-01003",
+          "play_store-2026-05-02-00952",
+          "play_store-2026-03-16-05028",
+          "play_store-2026-05-13-00135",
+          "play_store-2026-05-11-00349",
+          "play_store-2026-05-09-00550",
+          "play_store-2026-05-06-00766",
+          "play_store-2026-04-27-01137",
+          "play_store-2026-04-19-01572",
+          "play_store-2026-05-13-00176",
+          "play_store-2026-04-30-01015",
+          "play_store-2026-04-30-01002",
+          "play_store-2026-05-04-00894",
+          "play_store-2026-05-01-00989",
+          "play_store-2026-04-17-01819",
+          "play_store-2026-05-12-00302",
+          "play_store-2026-04-30-01016",
+          "play_store-2026-04-27-01194",
+          "play_store-2026-04-26-01208",
+          "play_store-2026-04-16-01955",
+          "play_store-2026-04-15-02061",
+          "play_store-2026-04-04-03060",
+          "play_store-2026-05-12-00315",
+          "play_store-2026-04-30-01014",
+          "play_store-2026-05-02-00955",
+          "play_store-2026-04-16-01907",
+          "play_store-2026-04-13-02319",
+          "play_store-2026-05-09-00531",
+          "play_store-2026-05-11-00413",
+          "play_store-2026-04-27-01198",
+          "play_store-2026-04-24-01272",
+          "play_store-2026-04-15-02023",
+          "play_store-2026-04-16-01892",
+          "play_store-2026-04-05-03023",
+          "play_store-2026-04-09-02681"
+        ],
+        "sample_quotes": [
+          {
+            "review_id": "play_store-2026-05-14-00017",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "easy interface app and good and easy to use. nice service help too"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00154",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "this is not good features only buy and sells charge extra"
+          },
+          {
+            "review_id": "play_store-2026-05-11-00440",
+            "rating": 4,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "App good simple and essy but costomer care very slow and poor . Proper guidence and solution bhi nahi milta hai . groww excutive khud hi confuse rahty hai . Costomer care ( chat & call ) poor responce . And baat nahi kerty call cut kerty hai hai Please provide better costomer sup"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00130",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "Its streamlined onboarding process, advanced portfolio analytics, and real-time market insights significantly enhance the overall [ACCOUNT_ID] for both novice and seasoned investors. Furthermore, the platform’s robust security architecture and transparent fee structure contribute"
+          },
+          {
+            "review_id": "play_store-2026-05-09-00545",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "Interface is good, Speed of placing order is good. But CHARGES are worst part , it charges the most in industry."
+          }
+        ],
+        "source": "local_deterministic_fallback"
+      },
+      {
+        "theme_name": "Customer Support",
+        "summary": "Users repeatedly mention customer support in recent reviews.",
+        "sentiment": "mostly_negative",
+        "review_count": 105,
+        "rating_breakdown": {
+          "negative": 58,
+          "positive": 33,
+          "neutral": 14
+        },
+        "supporting_review_ids": [
+          "play_store-2026-05-14-00099",
+          "play_store-2026-05-11-00440",
+          "play_store-2026-05-12-00246",
+          "play_store-2026-05-12-00318",
+          "play_store-2026-05-08-00628",
+          "play_store-2026-05-14-00020",
+          "play_store-2026-05-13-00191",
+          "play_store-2026-05-09-00528",
+          "play_store-2026-05-10-00499",
+          "play_store-2026-05-06-00819",
+          "play_store-2026-04-25-01234",
+          "play_store-2026-05-13-00234",
+          "play_store-2026-05-12-00245",
+          "play_store-2026-05-09-00571",
+          "play_store-2026-05-07-00684",
+          "play_store-2026-05-02-00952",
+          "play_store-2026-05-13-00229",
+          "play_store-2026-05-12-00239",
+          "play_store-2026-05-06-00766",
+          "play_store-2026-05-05-00867",
+          "play_store-2026-04-27-01129",
+          "play_store-2026-02-24-07714",
+          "play_store-2026-05-11-00402",
+          "play_store-2026-05-12-00273",
+          "play_store-2026-05-01-00989",
+          "play_store-2026-04-27-01192",
+          "play_store-2026-05-12-00252",
+          "play_store-2026-05-07-00674",
+          "play_store-2026-05-02-00953",
+          "play_store-2026-04-24-01270",
+          "play_store-2026-04-25-01219",
+          "play_store-2026-05-07-00751",
+          "play_store-2026-04-23-01312",
+          "play_store-2026-04-29-01073",
+          "play_store-2026-04-17-01824",
+          "play_store-2026-04-03-03185",
+          "play_store-2026-05-06-00772",
+          "play_store-2026-05-07-00752",
+          "play_store-2026-04-16-01892",
+          "play_store-2026-03-25-04017",
+          "play_store-2026-05-06-00771",
+          "play_store-2026-04-15-02116",
+          "play_store-2026-05-06-00845",
+          "play_store-2026-05-07-00673",
+          "play_store-2026-04-14-02137",
+          "play_store-2026-05-06-00780",
+          "play_store-2026-04-02-03267",
+          "play_store-2026-05-06-00761",
+          "play_store-2026-05-01-00978",
+          "play_store-2026-05-06-00795"
+        ],
+        "sample_quotes": [
+          {
+            "review_id": "play_store-2026-05-14-00099",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "Very bad experience with Groww. The [ACCOUNT_ID] is extremely poor and issues take too long to resolve. I have been waiting for a solution but keep getting delayed responses without proper updates. Very disappointing support experience."
+          },
+          {
+            "review_id": "play_store-2026-05-11-00440",
+            "rating": 4,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "App good simple and essy but costomer care very slow and poor . Proper guidence and solution bhi nahi milta hai . groww excutive khud hi confuse rahty hai . Costomer care ( chat & call ) poor responce . And baat nahi kerty call cut kerty hai hai Please provide better costomer sup"
+          },
+          {
+            "review_id": "play_store-2026-05-12-00246",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "WORST EXPERIENCE EVER. 6 days and my KYC is still pending. Your support team LIED to me on email - promised activation by 9 PM on 8th Oct 2026. It's 9:50 PM now, still blocked. I am losing money every day because I cannot start my SIP due to YOUR incompetence. This is financial h"
+          },
+          {
+            "review_id": "play_store-2026-05-12-00318",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "Easy to understand and fast response to request"
+          },
+          {
+            "review_id": "play_store-2026-05-08-00628",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "please improve their features of marking the support and resistance level of big time frame but I come in small time frame what earlier 9 marked it is show very far in shorter time frame . my one suggestion is add a feature in scalping mode I can see the chart in different time f"
+          }
+        ],
+        "source": "local_deterministic_fallback"
+      },
+      {
+        "theme_name": "Withdrawals",
+        "summary": "Users repeatedly mention withdrawals in recent reviews.",
+        "sentiment": "mostly_negative",
+        "review_count": 95,
+        "rating_breakdown": {
+          "negative": 43,
+          "positive": 40,
+          "neutral": 12
+        },
+        "supporting_review_ids": [
+          "play_store-2026-05-14-00075",
+          "play_store-2026-05-13-00160",
+          "play_store-2026-05-14-00088",
+          "play_store-2026-05-13-00130",
+          "play_store-2026-05-13-00132",
+          "play_store-2026-05-14-00029",
+          "play_store-2026-05-13-00187",
+          "play_store-2026-05-13-00133",
+          "play_store-2026-05-13-00191",
+          "play_store-2026-05-09-00528",
+          "play_store-2026-05-07-00682",
+          "play_store-2026-05-12-00245",
+          "play_store-2026-05-11-00398",
+          "play_store-2026-04-27-01136",
+          "play_store-2026-05-11-00349",
+          "play_store-2026-05-09-00541",
+          "play_store-2026-05-11-00412",
+          "play_store-2026-04-14-02153",
+          "play_store-2026-05-11-00411",
+          "play_store-2026-05-06-00775",
+          "play_store-2026-04-30-01002",
+          "play_store-2026-04-10-02523",
+          "play_store-2026-05-10-00506",
+          "play_store-2026-04-26-01208",
+          "play_store-2026-04-04-03060",
+          "play_store-2026-05-07-00725",
+          "play_store-2026-04-23-01312",
+          "play_store-2026-04-16-01907",
+          "play_store-2026-04-01-03385",
+          "play_store-2026-05-07-00752",
+          "play_store-2026-04-15-02067",
+          "play_store-2026-04-05-03023",
+          "play_store-2026-03-03-06858",
+          "play_store-2026-05-07-00707",
+          "play_store-2026-04-15-02114",
+          "play_store-2026-02-26-07443",
+          "play_store-2026-05-07-00733",
+          "play_store-2026-04-15-02047",
+          "play_store-2026-04-22-01339",
+          "play_store-2026-02-23-07784",
+          "play_store-2026-05-04-00914",
+          "play_store-2026-04-13-02336",
+          "play_store-2026-05-06-00812",
+          "play_store-2026-05-01-00978",
+          "play_store-2026-05-06-00795",
+          "play_store-2026-04-13-02285",
+          "play_store-2026-04-29-01069",
+          "play_store-2026-04-12-02364",
+          "play_store-2026-04-29-01058",
+          "play_store-2026-04-12-02350"
+        ],
+        "sample_quotes": [
+          {
+            "review_id": "play_store-2026-05-14-00075",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "Limit [REFERENCE_ID] is not proper. Not able to sell all quantity at a time at a predefined price, it sells quantity partially & brokerage charges exceed more than profit. This is the worst experience."
+          },
+          {
+            "review_id": "play_store-2026-05-13-00160",
+            "rating": 1,
+            "rating_label": "negative",
+            "platform": "play_store",
+            "quote": "I chose Groww expecting transparent pricing, but my experience was the opposite. The final charges were much higher than anticipated, and I did not clearly understand the full cost before executing the trade. Platforms handling financial transactions should make all fees prominen"
+          },
+          {
+            "review_id": "play_store-2026-05-14-00088",
+            "rating": 4,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "all ok but, withdrawal was not coming in time"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00130",
+            "rating": 5,
+            "rating_label": "positive",
+            "platform": "play_store",
+            "quote": "Its streamlined onboarding process, advanced portfolio analytics, and real-time market insights significantly enhance the overall [ACCOUNT_ID] for both novice and seasoned investors. Furthermore, the platform’s robust security architecture and transparent fee structure contribute"
+          },
+          {
+            "review_id": "play_store-2026-05-13-00132",
+            "rating": 3,
+            "rating_label": "neutral",
+            "platform": "play_store",
+            "quote": "Request Groww Team to add Trigger price in buying... Limit, Market is there.... please add trigger option in buying...."
+          }
+        ],
+        "source": "local_deterministic_fallback"
+      }
+    ],
+    "selected_quotes": [
+      {
+        "review_id": "play_store-2026-05-13-00154",
+        "rating": 1,
+        "rating_label": "negative",
+        "platform": "play_store",
+        "quote": "this is not good features only buy and sells charge extra",
+        "theme_name": "Product Experience and Features"
+      },
+      {
+        "review_id": "play_store-2026-05-12-00246",
+        "rating": 1,
+        "rating_label": "negative",
+        "platform": "play_store",
+        "quote": "WORST EXPERIENCE EVER. 6 days and my KYC is still pending. Your support team LIED to me on email - promised activation by 9 PM on 8th Oct 2026. It's 9:50 PM now, still blocked. I am losing money every day because I cannot start my SIP due to YOUR incompetence. This is financial h",
+        "theme_name": "Customer Support"
+      },
+      {
+        "review_id": "play_store-2026-05-13-00160",
+        "rating": 1,
+        "rating_label": "negative",
+        "platform": "play_store",
+        "quote": "I chose Groww expecting transparent pricing, but my experience was the opposite. The final charges were much higher than anticipated, and I did not clearly understand the full cost before executing the trade. Platforms handling financial transactions should make all fees prominen",
+        "theme_name": "Withdrawals"
+      }
+    ]
+  }
+}

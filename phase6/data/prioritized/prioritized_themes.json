@@ -1,0 +1,330 @@
+{
+  "source": "local_deterministic_ranking",
+  "groq_calls_used": 0,
+  "selection_rules": {
+    "top_theme_limit": 3,
+    "quote_limit": 3,
+    "priority_score": "review_count plus negative sentiment share",
+    "quote_rule": "real privacy-safe quote from Phase 5 sample evidence"
+  },
+  "top_themes": [
+    {
+      "theme_name": "Customer Support",
+      "summary": "Users repeatedly mention customer support in recent reviews.",
+      "sentiment": "mostly_negative",
+      "review_count": 57,
+      "rating_breakdown": {
+        "negative": 37,
+        "positive": 14,
+        "neutral": 6
+      },
+      "supporting_review_ids": [
+        "play_store-2026-09-12-00038",
+        "play_store-2026-09-11-00082",
+        "play_store-2026-09-11-00092",
+        "play_store-2026-09-02-01081",
+        "play_store-2026-09-10-00212",
+        "play_store-2026-09-11-00150",
+        "play_store-2026-09-08-00436",
+        "play_store-2026-09-02-01068",
+        "play_store-2026-09-10-00191",
+        "play_store-2026-09-10-00184",
+        "play_store-2026-09-05-00698",
+        "play_store-2026-08-31-01327",
+        "play_store-2026-09-03-00878",
+        "play_store-2026-09-10-00241",
+        "play_store-2026-09-04-00833",
+        "play_store-2026-08-31-01322",
+        "play_store-2026-08-30-01564",
+        "play_store-2026-09-10-00219",
+        "play_store-2026-09-09-00364",
+        "play_store-2026-09-09-00391",
+        "play_store-2026-09-02-01005",
+        "play_store-2026-09-10-00230",
+        "play_store-2026-09-01-01134",
+        "play_store-2026-09-03-00897",
+        "play_store-2026-08-31-01247",
+        "play_store-2026-09-09-00362",
+        "play_store-2026-09-06-00641",
+        "play_store-2026-09-08-00485",
+        "play_store-2026-09-01-01202",
+        "play_store-2026-09-08-00452",
+        "play_store-2026-08-31-01411",
+        "play_store-2026-09-08-00444",
+        "play_store-2026-09-07-00569",
+        "play_store-2026-08-30-01531",
+        "play_store-2026-09-07-00550",
+        "play_store-2026-09-03-00877",
+        "play_store-2026-08-30-01435",
+        "play_store-2026-09-07-00589",
+        "play_store-2026-09-02-01016",
+        "play_store-2026-08-30-01501",
+        "play_store-2026-09-06-00639",
+        "play_store-2026-09-05-00675",
+        "play_store-2026-09-04-00817",
+        "play_store-2026-08-31-01294",
+        "play_store-2026-09-03-00938",
+        "play_store-2026-09-03-00943",
+        "play_store-2026-09-02-01000",
+        "play_store-2026-09-02-01079",
+        "play_store-2026-09-01-01187",
+        "play_store-2026-08-30-01478"
+      ],
+      "sample_quotes": [
+        {
+          "review_id": "play_store-2026-09-12-00038",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "Worst experience! Groww needs brokerage only even in customer loss."
+        },
+        {
+          "review_id": "play_store-2026-09-11-00082",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "very easy to use always support for every query to resolve."
+        },
+        {
+          "review_id": "play_store-2026-09-11-00092",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "I am using Shiprocket Quick for my regular local orders and the experience has been positive so far. The app is easy to understand and delivery progress can be checked quickly. I also find it useful when customers ask about their orders because the latest status is easily accessi"
+        },
+        {
+          "review_id": "play_store-2026-09-02-01081",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "after the update, on screen button in android is not working as earlier when the groww's app technical chart is opened. just let me know by when this issue will be resolved?"
+        },
+        {
+          "review_id": "play_store-2026-09-10-00212",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "F&O Trap & Broken UI State As a stocks/funds investor, critical flaws ruin this app: F&O Trap: The F&O section has an \"Activate\" button with zero confirmation popups. One misclick triggers 24hr activation with no cancel option. Broken Segments: After misclicking, all segment chec"
+        }
+      ],
+      "source": "local_deterministic_fallback"
+    },
+    {
+      "theme_name": "Product Experience and Features",
+      "summary": "Users repeatedly mention product experience and features in recent reviews.",
+      "sentiment": "mostly_positive",
+      "review_count": 80,
+      "rating_breakdown": {
+        "positive": 47,
+        "negative": 26,
+        "neutral": 7
+      },
+      "supporting_review_ids": [
+        "play_store-2026-09-11-00080",
+        "play_store-2026-09-07-00530",
+        "play_store-2026-09-11-00092",
+        "play_store-2026-09-08-00424",
+        "play_store-2026-09-09-00311",
+        "play_store-2026-09-07-00574",
+        "play_store-2026-09-07-00502",
+        "play_store-2026-08-30-01645",
+        "play_store-2026-09-11-00144",
+        "play_store-2026-09-10-00212",
+        "play_store-2026-09-07-00553",
+        "play_store-2026-09-11-00117",
+        "play_store-2026-09-07-00560",
+        "play_store-2026-09-01-01111",
+        "play_store-2026-09-11-00139",
+        "play_store-2026-09-04-00821",
+        "play_store-2026-09-10-00242",
+        "play_store-2026-09-03-00932",
+        "play_store-2026-08-30-01503",
+        "play_store-2026-09-11-00167",
+        "play_store-2026-09-04-00853",
+        "play_store-2026-08-30-01494",
+        "play_store-2026-08-31-01322",
+        "play_store-2026-09-10-00193",
+        "play_store-2026-09-03-00963",
+        "play_store-2026-09-03-00893",
+        "play_store-2026-09-10-00266",
+        "play_store-2026-09-09-00367",
+        "play_store-2026-09-03-00927",
+        "play_store-2026-08-31-01247",
+        "play_store-2026-09-10-00251",
+        "play_store-2026-09-02-01008",
+        "play_store-2026-08-30-01485",
+        "play_store-2026-09-10-00205",
+        "play_store-2026-09-05-00723",
+        "play_store-2026-09-02-01064",
+        "play_store-2026-09-10-00263",
+        "play_store-2026-09-03-00945",
+        "play_store-2026-09-01-01144",
+        "play_store-2026-09-07-00569",
+        "play_store-2026-08-30-01531",
+        "play_store-2026-08-29-01674",
+        "play_store-2026-09-09-00318",
+        "play_store-2026-09-07-00550",
+        "play_store-2026-09-03-00975",
+        "play_store-2026-08-31-01250",
+        "play_store-2026-08-31-01404",
+        "play_store-2026-09-09-00371",
+        "play_store-2026-09-02-01016",
+        "play_store-2026-08-31-01225"
+      ],
+      "sample_quotes": [
+        {
+          "review_id": "play_store-2026-09-11-00080",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "I have been utilizing Groww as my primary investment platform. I particularly appreciate its intuitive interface and [ACCOUNT_ID] design. The recently launched GR-1 AI assistant has proven to be an invaluable tool. It efficiently provides comprehensive information, eliminating th"
+        },
+        {
+          "review_id": "play_store-2026-09-07-00530",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "All profile enjoying GROWW it self, Dot use this app as never suggested. We investing to earn but they have very heavy charges, so please use othe budget Freindly platform. I don't know and really surprised how the Rating is so high even though other platforms providing best serv"
+        },
+        {
+          "review_id": "play_store-2026-09-11-00092",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "I am using Shiprocket Quick for my regular local orders and the experience has been positive so far. The app is easy to understand and delivery progress can be checked quickly. I also find it useful when customers ask about their orders because the latest status is easily accessi"
+        },
+        {
+          "review_id": "play_store-2026-09-08-00424",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "it's very easy to use the app even for beginners but it doesn't have trailing stoploss for equity delivery trades and charges for 20 rs for every sell order. It will be great if the concerns are sorted"
+        },
+        {
+          "review_id": "play_store-2026-09-09-00311",
+          "rating": 4,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "Needs to work on more filters and UI list to help investors to pick the right stock of their interest like other apps. For muslim to find Sharia Compliant stock , similar to a Jain they need Satvik filter or if we need to pick some stock which have 1.Low Debt to Asset , 2.High Pr"
+        }
+      ],
+      "source": "local_deterministic_fallback"
+    },
+    {
+      "theme_name": "App Stability and Crashes",
+      "summary": "Users repeatedly mention app stability and crashes in recent reviews.",
+      "sentiment": "mostly_negative",
+      "review_count": 39,
+      "rating_breakdown": {
+        "negative": 22,
+        "positive": 14,
+        "neutral": 3
+      },
+      "supporting_review_ids": [
+        "play_store-2026-09-12-00028",
+        "play_store-2026-09-12-00002",
+        "play_store-2026-09-07-00574",
+        "play_store-2026-09-12-00013",
+        "play_store-2026-09-11-00099",
+        "play_store-2026-09-04-00786",
+        "play_store-2026-09-11-00143",
+        "play_store-2026-09-10-00239",
+        "play_store-2026-09-03-00878",
+        "play_store-2026-09-11-00154",
+        "play_store-2026-09-10-00265",
+        "play_store-2026-09-09-00328",
+        "play_store-2026-09-09-00364",
+        "play_store-2026-09-09-00367",
+        "play_store-2026-09-07-00531",
+        "play_store-2026-09-06-00641",
+        "play_store-2026-09-07-00601",
+        "play_store-2026-09-05-00723",
+        "play_store-2026-09-06-00624",
+        "play_store-2026-09-03-00945",
+        "play_store-2026-09-05-00729",
+        "play_store-2026-09-03-00975",
+        "play_store-2026-09-02-01012",
+        "play_store-2026-09-02-01016",
+        "play_store-2026-09-02-01069",
+        "play_store-2026-09-02-01055",
+        "play_store-2026-08-31-01295",
+        "play_store-2026-08-31-01377",
+        "play_store-2026-08-30-01599",
+        "play_store-2026-08-31-01294",
+        "play_store-2026-08-30-01536",
+        "play_store-2026-08-31-01335",
+        "play_store-2026-08-31-01390",
+        "play_store-2026-08-31-01409",
+        "play_store-2026-08-31-01237",
+        "play_store-2026-08-30-01478",
+        "play_store-2026-08-30-01498",
+        "play_store-2026-08-30-01530",
+        "play_store-2026-08-30-01559"
+      ],
+      "sample_quotes": [
+        {
+          "review_id": "play_store-2026-09-12-00028",
+          "rating": 2,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "There are lots of bugs in your app or server, sometimes IPO dates change, Sometimes the pre-apply option appears and disappears. Fix those things."
+        },
+        {
+          "review_id": "play_store-2026-09-12-00002",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "nowadays this app work too slowly everything feels laggy we can't see Even how many stocks we pledged and we can't see our balance properly too many glitches"
+        },
+        {
+          "review_id": "play_store-2026-09-07-00574",
+          "rating": 3,
+          "rating_label": "neutral",
+          "platform": "play_store",
+          "quote": "okay so after using it for 3 years it's best app for trading and smooth ui but sometimes it lags or just keeps buffering when markets are at high volatility so it should be improved and now I'm changing my rating because there IPO and f&O pages keep stucking and showing wrong inf"
+        },
+        {
+          "review_id": "play_store-2026-09-12-00013",
+          "rating": 1,
+          "rating_label": "negative",
+          "platform": "play_store",
+          "quote": "groww app F and O always struck, glitches,slow moments very bad"
+        },
+        {
+          "review_id": "play_store-2026-09-11-00099",
+          "rating": 5,
+          "rating_label": "positive",
+          "platform": "play_store",
+          "quote": "ipo ek bi nahi laga muje"
+        }
+      ],
+      "source": "local_deterministic_fallback"
+    }
+  ],
+  "selected_quotes": [
+    {
+      "quote": "F&O Trap & Broken UI State As a stocks/funds investor, critical flaws ruin this app: F&O Trap: The F&O section has an \"Activate\" button with zero confirmation popups. One misclick triggers 24hr activation with no cancel option. Broken Segments: After misclicking, all segment chec",
+      "rating_label": "negative",
+      "rating": 1,
+      "review_id": "play_store-2026-09-10-00212",
+      "platform": "play_store",
+      "theme_name": "Customer Support"
+    },
+    {
+      "quote": "All profile enjoying GROWW it self, Dot use this app as never suggested. We investing to earn but they have very heavy charges, so please use othe budget Freindly platform. I don't know and really surprised how the Rating is so high even though other platforms providing best serv",
+      "rating_label": "negative",
+      "rating": 1,
+      "review_id": "play_store-2026-09-07-00530",
+      "platform": "play_store",
+      "theme_name": "Product Experience and Features"
+    },
+    {
+      "quote": "There are lots of bugs in your app or server, sometimes IPO dates change, Sometimes the pre-apply option appears and disappears. Fix those things.",
+      "rating_label": "negative",
+      "rating": 2,
+      "review_id": "play_store-2026-09-12-00028",
+      "platform": "play_store",
+      "theme_name": "App Stability and Crashes"
+    }
+  ]
+}
