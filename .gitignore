@@ -2,6 +2,9 @@
 .env
 .env.local
 .env.*.local
+*credentials*.json
+service_account*.json
+token.json
 
 # Python
 __pycache__/

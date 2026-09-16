@@ -209,6 +209,27 @@
       "subject": "Test Weekly Report",
       "body_snippet": "Hello Support Team",
       "timestamp": "2026-09-17T01:10:06.895700"
+    },
+    {
+      "draft_id": "draft-58b9142e6698",
+      "recipient": "test@example.com",
+      "subject": "Weekly Pulse Subject",
+      "body_snippet": "Weekly Pulse Body",
+      "timestamp": "2026-09-17T01:32:15.007049"
+    },
+    {
+      "draft_id": "draft-5477007807ed",
+      "recipient": "prathamd3001@gmail.com",
+      "subject": "Weekly App Review Pulse - 2026-09-17",
+      "body_snippet": "Hello,\n\nHere is the weekly app review pulse summary:\n\n==================================================\n\nHEADLINE\n\nWeekly review analysis highlights key user concerns and improvement opportunities\n\n=",
+      "timestamp": "2026-09-17T01:32:15.154285"
+    },
+    {
+      "draft_id": "draft-09d6eed204e8",
+      "recipient": "test@example.com",
+      "subject": "Test Weekly Report",
+      "body_snippet": "Hello Support Team",
+      "timestamp": "2026-09-17T01:32:15.230699"
     }
   ]
 }

@@ -240,6 +240,32 @@ def main():
         
         print("SUCCESS: Weekly pulse appended to Google Doc via MCP")
         print(f"Document URL: {doc_url}")
+
+    # Direct live Google Docs API integration if service account credentials exist
+    try:
+        if str(project_root / "phase9") not in sys.path:
+            sys.path.insert(0, str(project_root / "phase9"))
+        from google_docs_writer import append_to_live_google_doc, find_service_account_path
+        
+        service_cred = find_service_account_path(project_root)
+        if service_cred:
+            print(f"\n🔑 Found Google service account: {service_cred.name}")
+            print("🚀 Appending directly to live Google Doc via Google Docs API v1...")
+            live_res = append_to_live_google_doc(doc_id, formatted_content, project_root)
+            if live_res.get("success"):
+                print(f"✅ LIVE GOOGLE DOCS API: Successfully appended {live_res.get('characters_appended')} characters directly to your Google Doc!")
+                status["live_google_api_success"] = True
+                status["service_account"] = live_res.get("service_account_used")
+            else:
+                print(f"⚠ Live Google Docs API call returned: {live_res.get('message')}")
+                status["live_google_api_error"] = live_res.get("message")
+        else:
+            print("\nℹ Live Google Docs Direct Writing:")
+            print("  To have Python directly insert text into your live Google Doc without copy-pasting:")
+            print("  1. Save your Google Cloud Service Account JSON as 'service_account.json' in this project root.")
+            print(f"  2. Share your Google Doc (ID: {doc_id}) with the service account email as Editor.")
+    except Exception as e:
+        print(f"Notice: Direct Google Docs writer check: {e}")
     
     save_json(status, str(status_path))
     print(f"\nDelivery status saved to: {status_path}")
